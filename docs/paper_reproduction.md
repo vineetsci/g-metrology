@@ -91,3 +91,16 @@ pytest -q tests
 Successful analysis stages are intentionally quiet: each stage reports only `[PASS]`, its stage name, and elapsed time. Detailed analysis output is shown only when a stage fails.
 
 When SBC runs inside a mode, the simulation count is fixed by that mode: Full runs one 200-simulation SBC job; Archive runs one 1,000-simulation SBC job and writes both `sbc_200.json` and `sbc_1000.json` from that single run. It does not run a second SBC job for the 200-simulation checkpoint. The standalone `analyses/sampler_validation/sbc.py` command defaults to the 1,000-simulation configuration unless its command-line settings override it. SBC is the only mode with a live determinate progress display. In an interactive terminal it is rendered on one line with a braille spinner, percentage, 40-character bar, elapsed time, and empirical ETA. Full uses the 200-simulation display; Archive uses the 1,000-simulation display for its single run, including the 200-simulation checkpoint. Fresh NUTS explicitly disables its native progress bar.
+
+## Maintenance
+
+`tools/hash_update.py` recomputes the SHA-256 hashes of the three authoritative
+input files (`data/codata_2010_g.yaml`, `data/codata_2018_g.yaml`,
+`data/nist2026_configurations.yaml`) and updates `data/MANIFEST.json` and
+`src/g_metrology/data.py` accordingly. Run it from the repository root after
+any edit to an input YAML:
+
+```bash
+python tools/update_hash.py
+```
+The script prints the computed hashes, shows the proposed changes, and writes nothing until the prompt is confirmed.

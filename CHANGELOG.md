@@ -11,7 +11,7 @@
 - Validated the final repository metadata and citation information, including author/ORCID and repository references, using cffconvert.
 - Removed generated build artifacts and added repository ignore rules for caches, virtual environments, build outputs, and other local development files.
 - Added `DATA_LICENSE.md` and clarified in the README that external scientific datasets retain their source licensing and attribution requirements.
-- Updated documentation to use consistent final-release terminology and removed outdated references to RC6 and internal development terminology.
+- Updated documentation to use consistent final-release terminology and removed outdated references to previous versions.
 - Updated the archived Student-t predictive-band documentation to describe its status independently of a specific release candidate.
 - Strengthened the Student-t simulation-based calibration by evaluating SBC ranks for all four model parameters (\mu, \tau, \lambda, \nu), while retaining the existing 1,000-simulation archive protocol and the same sbc.py/reproduction pipeline.
 - Aligned the 200-simulation Full SBC execution check with the Archive sampling configuration so that it uses the same 4-chain, 4,000-draw, 2,000-burn-in protocol.
@@ -20,6 +20,7 @@
 - Aligned the Student-t SBC generative and inference calculations with the canonical standardized-coordinate convention used by the model implementation.
 - Added a dedicated SBC artifact regression test covering the four-parameter rank structure and sampler diagnostics.
 - Removed duplicate execution of the core scientific regression test file in Full and Archive modes; the final complete pytest suite now provides the single consolidated verification stage.
+- Added `tools/update_hash.py`, a maintainer utility that recomputes the SHA-256 hashes of the three authoritative input YAML files and updates `data/MANIFEST.json` and `src/g_metrology/data.py` after an explicit confirmation prompt.
 
 ## 0.9.5-rc6
 
