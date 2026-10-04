@@ -3,6 +3,7 @@ message: "If you use this software, please cite it using these metadata."
 title: "G-metrology"
 type: software
 version: 1.0.0
+date-released: 2026-10-03
 
 authors:
   - given-names: "Vineet"
