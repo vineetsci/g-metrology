@@ -12,7 +12,7 @@ dependencies = ["numpy", "scipy", "pyyaml", "numba", "matplotlib"]
 
 [project.optional-dependencies]
 test = ["pytest>=8,<10"]
-bayesian = ["pymc>=6,<7", "arviz>=1,<2", "pytensor>=3,<4", "xarray", "h5netcdf"]
+bayesian = ["pymc>=6,<7", "arviz>=1,<2", "pytensor>=3,<4", "xarray", "h5netcdf", "h5py"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
