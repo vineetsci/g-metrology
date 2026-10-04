@@ -1,0 +1,127 @@
+{
+  "protocol": {
+    "name": "archived_student_t_scalar_G_predictive_band",
+    "status": "archived historical Student-t predictive-band artifact",
+    "package_version": "0.9.5rc6",
+    "analysis_script": "analyses/archived_student_t_predictive_band/archived_student_t_predictive_band.py",
+    "training_data": "data/codata_2018_g.yaml",
+    "training_dataset_label": "CODATA-2018 G",
+    "training_count": 16,
+    "training_data_sha256": "a68e826d585360132748505f0194e3c156a5f5006c878753ebe96a51aedadb72",
+    "posterior_reference": "results/nuts_reference/free.nc",
+    "posterior_reference_sha256": "e7618f856ed48ca586d3c5e461d20779bec74daabe93647f1c33ac828e8cd3b5",
+    "sampler_script": "analyses/sampler_validation/run_nuts.py",
+    "sampler_script_sha256": "f088831a69d719d51dcce16eada2fc5a779d8028fc19ab8ab904e8179354b2f3",
+    "repository_git_commit": null,
+    "creation_timestamp_utc": "2026-09-27T15:18:39.441048+00:00",
+    "analysis_script_sha256": "d41291c96c49ae67815e0cf800784ce2f55c9ad154d079375d905b38612a9995",
+    "historical_generation_package_version": "0.9.5rc5"
+  },
+  "frozen_definition": {
+    "model": "canonical_hierarchical_multivariate_Student_t",
+    "model_equation": "y ~ MvStudentT(nu, mu*1, Sigma), Sigma = lambda^2*S_reported + tau^2*I",
+    "future_scalar_scale_equation": "scale_new = sqrt(lambda^2*u_std^2 + tau^2)",
+    "future_experiment": "one independent scalar G determination",
+    "active_covariance_convention": "k=1.0; reported CODATA-2018 standard uncertainties are not pre-expanded in active covariance",
+    "priors": {
+      "mu_sd_standardized": 5.0,
+      "tau_beta_standardized": 1.0,
+      "log_lambda_mu": 0.0,
+      "log_lambda_sd": 1.0,
+      "nu_minus2_rate": 0.03571428571428571,
+      "nu_minus2_scale": 28.0
+    },
+    "standardization": {
+      "mean_si": 6.6737701875e-11,
+      "scale_si": 1.0581681233829668e-14,
+      "definition": "historical data are standardized with the arithmetic mean and population standard deviation used by StandardizationContext"
+    },
+    "future_uncertainty_conversion": "u_si = u_ppm * 1e-6 * reference_g_si",
+    "reference_g_si": 6.6743e-11,
+    "reference_g_description": "project's frozen CODATA reference used for ppm conversion",
+    "quantiles": "empirical 0.025, 0.50, and 0.975 quantiles of deterministic seeded posterior-predictive draws",
+    "posterior_draws_used": 16000,
+    "predictive_draws_per_posterior_draw": 8,
+    "predictive_draws_per_uncertainty": 128000,
+    "predictive_seed": 20260903,
+    "no_nist_2026_used": true
+  },
+  "sampler": {
+    "algorithm": "PyMC NUTS",
+    "chains": 4,
+    "draws_per_chain": 4000,
+    "tune_per_chain": 2000,
+    "target_accept": 0.95,
+    "seed": 20260903,
+    "native_progressbar": false,
+    "reference_posterior_is_previously_saved": true,
+    "convergence_checks": {
+      "rhat_all_le_1.01": true,
+      "ess_all_ge_1000": true,
+      "zero_divergences": true,
+      "bfmi_all_gt_0.3": true
+    }
+  },
+  "software_versions": {
+    "python": "3.12.10",
+    "numpy": "2.4.6",
+    "scipy": "1.18.1",
+    "pymc": "6.3.1",
+    "arviz": "1.3.0",
+    "pytensor": "3.3.0",
+    "xarray": "2026.7.0",
+    "h5netcdf": "1.8.1"
+  },
+  "future_intervals": [
+    {
+      "u_ppm": 20.0,
+      "u_si": 1.3348599999999998e-15,
+      "predictive_center_si": 6.674102062988169e-11,
+      "predictive_q025_si": 6.671813306150623e-11,
+      "predictive_q975_si": 6.676026739743658e-11,
+      "half_width_si": 2.106716796517464e-14,
+      "predictive_center_ppm_relative_to_reference": -29.65659497334507,
+      "q025_ppm_relative_to_reference": -372.5774761961507,
+      "q975_ppm_relative_to_reference": 258.71473317935363,
+      "half_width_ppm": 315.64610468775214
+    },
+    {
+      "u_ppm": 40.0,
+      "u_si": 2.6697199999999995e-15,
+      "predictive_center_si": 6.674064200315628e-11,
+      "predictive_q025_si": 6.671614143244719e-11,
+      "predictive_q975_si": 6.676375169973758e-11,
+      "half_width_si": 2.380513364519627e-14,
+      "predictive_center_ppm_relative_to_reference": -35.3295003778003,
+      "q025_ppm_relative_to_reference": -402.41774497412257,
+      "q975_ppm_relative_to_reference": 310.91949324400593,
+      "half_width_ppm": 356.66861910906425
+    },
+    {
+      "u_ppm": 60.0,
+      "u_si": 4.004579999999999e-15,
+      "predictive_center_si": 6.674038338845202e-11,
+      "predictive_q025_si": 6.671249428900951e-11,
+      "predictive_q975_si": 6.676895849376781e-11,
+      "half_width_si": 2.8232102379148523e-14,
+      "predictive_center_ppm_relative_to_reference": -39.20428431410049,
+      "q025_ppm_relative_to_reference": -457.0623284910866,
+      "q975_ppm_relative_to_reference": 388.9320792864638,
+      "half_width_ppm": 422.99720388877523
+    }
+  ],
+  "limitations": [
+    "The band is frozen from the 16 historical CODATA-2018 determinations and must be confronted with a future observation before any refit that includes it.",
+    "The target is one future independent scalar G determination; it is not an unchanged band for a correlated multi-configuration apparatus vector.",
+    "The quoted future uncertainty u is treated as a fixed input to the scalar predictive scale.",
+    "No NIST-2026 observation is used to fit, tune, choose, or validate this predictive band.",
+    "The protocol is not a confidence interval for G and is not a CODATA recommendation.",
+    "A later model update must create a new dated/versioned predictive band; it must not overwrite this artifact."
+  ],
+  "archive_status": {
+    "current_package_version": "1.0.0",
+    "historical_generation_package_version": "0.9.5rc5",
+    "numerical_result_unchanged": true,
+    "role": "archival provenance only; not an active primary predictor"
+  }
+}

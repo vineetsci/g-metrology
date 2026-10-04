@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "canonical_sources": [
+    "data/codata_2018_g.yaml",
+    "data/nist2026_configurations.yaml"
+  ],
+  "paper_outputs": [
+    {
+      "output": "paper/figures/fig1_historical_archive.pdf",
+      "generator": "paper/make_figures.py",
+      "inputs": [
+        "data/codata_2018_g.yaml",
+        "results/machine_readable/historical_dispersion.json"
+      ]
+    },
+    {
+      "output": "paper/figures/fig2_nist_internal_dispersion.pdf",
+      "generator": "paper/make_figures.py",
+      "inputs": [
+        "data/nist2026_configurations.yaml",
+        "results/machine_readable/nist_factorial_results.json"
+      ]
+    },
+    {
+      "output": "paper/figures/fig3_torque_common_offset.pdf",
+      "generator": "paper/make_figures.py",
+      "inputs": [
+        "data/nist2026_configurations.yaml",
+        "results/machine_readable/torque_offset.json"
+      ]
+    },
+    {
+      "output": "paper/tables/table1_historical_dispersion.tex",
+      "generator": "paper/make_tables.py",
+      "inputs": [
+        "results/machine_readable/historical_dispersion.json"
+      ]
+    },
+    {
+      "output": "paper/tables/table2_variance_models.tex",
+      "generator": "paper/make_tables.py",
+      "inputs": [
+        "results/machine_readable/precision_model_compare.json"
+      ]
+    },
+    {
+      "output": "paper/tables/table4_prospective_nist.tex",
+      "generator": "paper/make_tables.py",
+      "inputs": [
+        "results/machine_readable/prospective_nist.json"
+      ]
+    },
+    {
+      "output": "paper/tables/table6_torque_models.tex",
+      "generator": "paper/make_tables.py",
+      "inputs": [
+        "results/machine_readable/torque_offset.json"
+      ]
+    },
+    {
+      "output": "paper/tables/gaussian_predictive_band.tex",
+      "generator": "paper/make_tables.py",
+      "inputs": [
+        "results/machine_readable/gaussian_predictive_band.json",
+        "results/machine_readable/archived_student_t_predictive_band.json"
+      ]
+    }
+  ],
+  "manuscript_tables": [
+    {
+      "table": "Table 7",
+      "label": "tab:mechanisms",
+      "status": "embedded in manuscript",
+      "analysis": "analyses/mechanism_constraints/nist_mechanism_audit.py",
+      "inputs": [
+        "data/nist2026_configurations.yaml"
+      ],
+      "result": "results/machine_readable/nist_mechanism_constraints.json"
+    },
+    {
+      "table": "Table 8",
+      "label": "tab:discriminator",
+      "status": "embedded in manuscript",
+      "analysis": "analyses/mechanism_constraints/nist_mechanism_audit.py",
+      "inputs": [
+        "data/nist2026_configurations.yaml"
+      ],
+      "result": "results/machine_readable/nist_mechanism_constraints.json"
+    }
+  ],
+  "note": "This manifest defines the publication-output dependency graph; generated artifacts are downstream and never alternative scientific inputs. Tables 7 and 8 are embedded manuscript tables whose numerical content is supported by the machine-readable mechanism-analysis result. The Gaussian predictive-band table is an auxiliary output of the Paper suite and is not a numbered manuscript table."
+}

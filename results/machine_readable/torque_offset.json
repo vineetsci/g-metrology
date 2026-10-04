@@ -1,0 +1,71 @@
+{
+  "source": "Schlamminger et al. 2026, Table 15",
+  "input_source": "data/nist2026_configurations.yaml",
+  "configuration_order": [
+    "Cu0",
+    "Cu120",
+    "Cu240",
+    "sapphire"
+  ],
+  "delta_definition": "d_i = N_free_i - N_servo_i",
+  "predictor_definition": "x_i = N_free_i",
+  "torque_unit": "pN m",
+  "delta_torque_pNm": [
+    1.6999999999995907,
+    1.40000000000029,
+    2.0000000000024443,
+    2.100000000000435
+  ],
+  "u_typeA_pNm": [
+    0.5,
+    0.6708203932499369,
+    0.3605551275463989,
+    0.3605551275463989
+  ],
+  "signal_pNm": [
+    31197.9,
+    31184.2,
+    31185.600000000002,
+    13979.900000000001
+  ],
+  "common_offset_pNm": 1.9183544303807258,
+  "standard_error_pNm": 0.2151316935498353,
+  "chi2": 1.0928919182127066,
+  "dof": 3,
+  "p_value": 0.7787902741569384,
+  "absolute_offset_model": {
+    "model_equation": "d_i = Delta_N + epsilon_i",
+    "parameter": "Delta_N",
+    "estimate_pNm": 1.9183544303807258,
+    "standard_error_pNm": 0.2151316935498353,
+    "chi2": 1.0928919182127066,
+    "dof": 3,
+    "p_value_chi2_upper_tail": 0.7787902741569384
+  },
+  "fractional_scale_model": {
+    "model_equation": "d_i = f * N_free_i + epsilon_i",
+    "predictor": "N_free_i",
+    "predictor_unit": "pN m",
+    "parameter": "f",
+    "estimate_dimensionless": 6.747729268844982e-05,
+    "standard_error_dimensionless": 8.154452999353418e-06,
+    "estimate_ppm": 67.47729268844982,
+    "standard_error_ppm": 8.154452999353419,
+    "chi2": 12.133873827209998,
+    "dof": 3,
+    "p_value_chi2_upper_tail": 0.006938355885122531
+  },
+  "model_comparison": {
+    "delta_chi2_fractional_minus_absolute": 11.040981908997292,
+    "comparison_note": "Both are one-parameter, non-nested descriptive weighted least-squares models fit to the same four observations. Delta chi-square is reported as a goodness-of-fit contrast, not as a chi-square likelihood-ratio test or calibrated p-value.",
+    "uncertainty_note": "Uses combined independent Type-A uncertainties for d_i, treats N_free_i as fixed, and does not supply a full covariance model for the four Table-15 differences."
+  },
+  "assumptions": [
+    "Differences use free minus servo.",
+    "Uncertainties are combined Type-A values in quadrature.",
+    "Observations are treated as independent for this analysis.",
+    "The predictor N_free_i is treated as fixed.",
+    "The fractional-scale result does not identify a physical mechanism.",
+    "Delta chi-square is not a nested likelihood-ratio-test statistic."
+  ]
+}

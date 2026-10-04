@@ -1,0 +1,65 @@
+{
+  "comparison_basis": "NUTS diagnostics means/SDs versus saved Numba reference means/SDs",
+  "models": [
+    {
+      "model": "free",
+      "parameters": {
+        "mu": {
+          "nuts_mean": 0.2599027797902622,
+          "nuts_sd": 0.29241519301616237,
+          "numba_mean": 0.2261028245780656,
+          "numba_sd": 0.3075483965693532,
+          "mean_relative_difference": 0.1494893098981461
+        },
+        "tau": {
+          "nuts_mean": 0.6887564796606462,
+          "nuts_sd": 0.4052079902223296,
+          "numba_mean": 0.7140937026709943,
+          "numba_sd": 0.41269109628828965,
+          "mean_relative_difference": -0.035481650259030065
+        },
+        "lambda": {
+          "nuts_mean": 1.9090688440167938,
+          "nuts_sd": 1.290254380091207,
+          "numba_mean": 1.8963050986961316,
+          "numba_sd": 1.3014339064602753,
+          "mean_relative_difference": 0.0067308500775736455
+        },
+        "nu": {
+          "nuts_mean": 30.636943580456773,
+          "nuts_sd": 27.686438831302485,
+          "numba_mean": 30.5310295073234,
+          "numba_sd": 28.29826303112636,
+          "mean_relative_difference": 0.00346906327243135
+        }
+      }
+    },
+    {
+      "model": "codata",
+      "parameters": {
+        "tau": {
+          "nuts_mean": 0.42207768304421966,
+          "nuts_sd": 0.35191115629184766,
+          "numba_mean": 0.426182551787165,
+          "numba_sd": 0.35481557236280536,
+          "mean_relative_difference": -0.009631714685952985
+        },
+        "lambda": {
+          "nuts_mean": 2.692601522426966,
+          "nuts_sd": 1.1815366170409147,
+          "numba_mean": 2.680968649930357,
+          "numba_sd": 1.1560720207061874,
+          "mean_relative_difference": 0.004339055772588393
+        },
+        "nu": {
+          "nuts_mean": 29.903704907520115,
+          "nuts_sd": 26.859609249585287,
+          "numba_mean": 30.88307221365019,
+          "numba_sd": 27.897140465031573,
+          "mean_relative_difference": -0.031712107505198255
+        }
+      }
+    }
+  ],
+  "interpretation": "Agreement is close enough to support the claim that the principal posterior scale results are not obviously sampler-specific; the compact shared artifact does not retain raw NUTS draws, so exact draw-level distribution distances are not claimed."
+}

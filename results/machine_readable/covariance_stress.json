@@ -1,0 +1,305 @@
+{
+  "description": "Full 5x5 historical quoted-error/correlation stress grid plus 5-point NIST quoted-error scale sensitivity.",
+  "historical_u_scale_grid": [
+    0.8,
+    0.9,
+    1.0,
+    1.1,
+    1.2
+  ],
+  "correlation_scale_grid": [
+    0.0,
+    0.5,
+    1.0,
+    1.25,
+    1.5
+  ],
+  "historical_grid": [
+    {
+      "u_scale": 0.8,
+      "corr_scale": 0.0,
+      "lambda_mle": 4.395486177386506,
+      "mu_scaled": 6.674289838210328,
+      "q_nominal": 309.1247661670768,
+      "historical_birge_nominal": 4.539638503721611,
+      "nist_Q_gaussian": 2.434943396414439,
+      "nist_tail_chi2": 0.6563218233140193
+    },
+    {
+      "u_scale": 0.8,
+      "corr_scale": 0.5,
+      "lambda_mle": 4.37530741688741,
+      "mu_scaled": 6.674295735473593,
+      "q_nominal": 306.29303980320645,
+      "historical_birge_nominal": 4.518798068832068,
+      "nist_Q_gaussian": 2.47706568928052,
+      "nist_tail_chi2": 0.6487471916090173
+    },
+    {
+      "u_scale": 0.8,
+      "corr_scale": 1.0,
+      "lambda_mle": 4.371413293629103,
+      "mu_scaled": 6.674300395607055,
+      "q_nominal": 305.7480534732808,
+      "historical_birge_nominal": 4.514776136740933,
+      "nist_Q_gaussian": 2.4970906451597465,
+      "nist_tail_chi2": 0.6451568336821445
+    },
+    {
+      "u_scale": 0.8,
+      "corr_scale": 1.25,
+      "lambda_mle": 4.377681963231328,
+      "mu_scaled": 6.674302257420876,
+      "q_nominal": 306.6256051320556,
+      "historical_birge_nominal": 4.5212506023006185,
+      "nist_Q_gaussian": 2.4961737850148586,
+      "nist_tail_chi2": 0.6453210668515383
+    },
+    {
+      "u_scale": 0.8,
+      "corr_scale": 1.5,
+      "lambda_mle": 4.392212497477593,
+      "mu_scaled": 6.674303743908116,
+      "q_nominal": 308.6645062033965,
+      "historical_birge_nominal": 4.536257680830434,
+      "nist_Q_gaussian": 2.4846169576533192,
+      "nist_tail_chi2": 0.6473924673903604
+    },
+    {
+      "u_scale": 0.9,
+      "corr_scale": 0.0,
+      "lambda_mle": 3.907098658944801,
+      "mu_scaled": 6.6742898382103295,
+      "q_nominal": 244.24672882336935,
+      "historical_birge_nominal": 4.035234225530321,
+      "nist_Q_gaussian": 3.065380928088981,
+      "nist_tail_chi2": 0.5469443044202393
+    },
+    {
+      "u_scale": 0.9,
+      "corr_scale": 0.5,
+      "lambda_mle": 3.889162224907325,
+      "mu_scaled": 6.674295735473594,
+      "q_nominal": 242.0093154000644,
+      "historical_birge_nominal": 4.016709394517394,
+      "nist_Q_gaussian": 3.118117579406759,
+      "nist_tail_chi2": 0.5382569346693007
+    },
+    {
+      "u_scale": 0.9,
+      "corr_scale": 1.0,
+      "lambda_mle": 3.885700540780518,
+      "mu_scaled": 6.674300395607055,
+      "q_nominal": 241.57870891716018,
+      "historical_birge_nominal": 4.0131343437697184,
+      "nist_Q_gaussian": 3.1430841900004602,
+      "nist_tail_chi2": 0.5341725637802011
+    },
+    {
+      "u_scale": 0.9,
+      "corr_scale": 1.25,
+      "lambda_mle": 3.891273030159108,
+      "mu_scaled": 6.674302257420877,
+      "q_nominal": 242.27208306730324,
+      "historical_birge_nominal": 4.018889424267217,
+      "nist_Q_gaussian": 3.1418280291345293,
+      "nist_tail_chi2": 0.5343776227696322
+    },
+    {
+      "u_scale": 0.9,
+      "corr_scale": 1.5,
+      "lambda_mle": 3.904189067536944,
+      "mu_scaled": 6.674303743908116,
+      "q_nominal": 243.8830666298442,
+      "historical_birge_nominal": 4.032229049627052,
+      "nist_Q_gaussian": 3.1271949590391195,
+      "nist_tail_chi2": 0.5367698065322484
+    },
+    {
+      "u_scale": 1.0,
+      "corr_scale": 0.0,
+      "lambda_mle": 3.516388863131067,
+      "mu_scaled": 6.674289838210328,
+      "q_nominal": 197.8398503469292,
+      "historical_birge_nominal": 3.6317108029772895,
+      "nist_Q_gaussian": 3.762403053768132,
+      "nist_tail_chi2": 0.4391149202174851
+    },
+    {
+      "u_scale": 1.0,
+      "corr_scale": 0.5,
+      "lambda_mle": 3.50024593391211,
+      "mu_scaled": 6.674295735473595,
+      "q_nominal": 196.02754547405218,
+      "historical_birge_nominal": 3.615038455065655,
+      "nist_Q_gaussian": 3.826741717789446,
+      "nist_tail_chi2": 0.429961298707497
+    },
+    {
+      "u_scale": 1.0,
+      "corr_scale": 1.0,
+      "lambda_mle": 3.497130495236914,
+      "mu_scaled": 6.674300395607055,
+      "q_nominal": 195.67875422289973,
+      "historical_birge_nominal": 3.6118209093927467,
+      "nist_Q_gaussian": 3.8570596027939583,
+      "nist_tail_chi2": 0.4256962230283913
+    },
+    {
+      "u_scale": 1.0,
+      "corr_scale": 1.25,
+      "lambda_mle": 3.502145592384104,
+      "mu_scaled": 6.674302257420876,
+      "q_nominal": 196.24038728451563,
+      "historical_birge_nominal": 3.6170004818404955,
+      "nist_Q_gaussian": 3.8553826681774,
+      "nist_tail_chi2": 0.4259313217613804
+    },
+    {
+      "u_scale": 1.0,
+      "corr_scale": 1.5,
+      "lambda_mle": 3.513770153990203,
+      "mu_scaled": 6.6743037439081165,
+      "q_nominal": 197.54528397017378,
+      "historical_birge_nominal": 3.6290061446643467,
+      "nist_Q_gaussian": 3.837309804946492,
+      "nist_tail_chi2": 0.4284710767040997
+    },
+    {
+      "u_scale": 1.1,
+      "corr_scale": 0.0,
+      "lambda_mle": 3.1967172061903835,
+      "mu_scaled": 6.674289838210328,
+      "q_nominal": 163.50400855118113,
+      "historical_birge_nominal": 3.301555275433899,
+      "nist_Q_gaussian": 4.523826920462629,
+      "nist_tail_chi2": 0.3397315656315039
+    },
+    {
+      "u_scale": 1.1,
+      "corr_scale": 0.5,
+      "lambda_mle": 3.1820417553451787,
+      "mu_scaled": 6.674295735473595,
+      "q_nominal": 162.00623592896872,
+      "historical_birge_nominal": 3.286398595514232,
+      "nist_Q_gaussian": 4.6006821681360766,
+      "nist_tail_chi2": 0.33077553946978944
+    },
+    {
+      "u_scale": 1.1,
+      "corr_scale": 1.0,
+      "lambda_mle": 3.1792095959458764,
+      "mu_scaled": 6.674300395607055,
+      "q_nominal": 161.71797869661134,
+      "historical_birge_nominal": 3.283473553993406,
+      "nist_Q_gaussian": 4.636714701716052,
+      "nist_tail_chi2": 0.32664299457159784
+    },
+    {
+      "u_scale": 1.1,
+      "corr_scale": 1.25,
+      "lambda_mle": 3.183768723326439,
+      "mu_scaled": 6.674302257420876,
+      "q_nominal": 162.1821382516658,
+      "historical_birge_nominal": 3.288182256218632,
+      "nist_Q_gaussian": 4.634523632500574,
+      "nist_tail_chi2": 0.3268930820492653
+    },
+    {
+      "u_scale": 1.1,
+      "corr_scale": 1.5,
+      "lambda_mle": 3.1943364511125862,
+      "mu_scaled": 6.674303743908115,
+      "q_nominal": 163.26056526460644,
+      "historical_birge_nominal": 3.299096495149406,
+      "nist_Q_gaussian": 4.612648724940535,
+      "nist_tail_chi2": 0.32939842106581646
+    },
+    {
+      "u_scale": 1.2,
+      "corr_scale": 0.0,
+      "lambda_mle": 2.9303239630626687,
+      "mu_scaled": 6.674289838210329,
+      "q_nominal": 137.38878496314527,
+      "historical_birge_nominal": 3.026425669147741,
+      "nist_Q_gaussian": 5.347398254952259,
+      "nist_tail_chi2": 0.25347247635178455
+    },
+    {
+      "u_scale": 1.2,
+      "corr_scale": 0.5,
+      "lambda_mle": 2.916871613487398,
+      "mu_scaled": 6.674295735473596,
+      "q_nominal": 136.13023991253624,
+      "historical_birge_nominal": 3.012532045888046,
+      "nist_Q_gaussian": 5.437610613559008,
+      "nist_tail_chi2": 0.2452682316722901
+    },
+    {
+      "u_scale": 1.2,
+      "corr_scale": 1.0,
+      "lambda_mle": 2.9142755577997557,
+      "mu_scaled": 6.674300395607055,
+      "q_nominal": 135.88802376590263,
+      "historical_birge_nominal": 3.0098507578272895,
+      "nist_Q_gaussian": 5.479673973732391,
+      "nist_tail_chi2": 0.24152193960526894
+    },
+    {
+      "u_scale": 1.2,
+      "corr_scale": 1.25,
+      "lambda_mle": 2.9184546707960983,
+      "mu_scaled": 6.674302257420877,
+      "q_nominal": 136.27804672535808,
+      "historical_birge_nominal": 3.0141670682004125,
+      "nist_Q_gaussian": 5.476864851662413,
+      "nist_tail_chi2": 0.2417705749858075
+    },
+    {
+      "u_scale": 1.2,
+      "corr_scale": 1.5,
+      "lambda_mle": 2.9281416509363996,
+      "mu_scaled": 6.6743037439081165,
+      "q_nominal": 137.1842249792874,
+      "historical_birge_nominal": 3.0241717872202893,
+      "nist_Q_gaussian": 5.45082664956357,
+      "nist_tail_chi2": 0.24408578943655948
+    }
+  ],
+  "nist_u_scale_sensitivity_nominal_history": [
+    {
+      "u_scale": 0.8,
+      "nist_Q_gaussian": 5.924139894371702,
+      "nist_tail_chi2": 0.20488563274900062
+    },
+    {
+      "u_scale": 0.9,
+      "nist_Q_gaussian": 4.727294839785803,
+      "nist_tail_chi2": 0.3164400429635929
+    },
+    {
+      "u_scale": 1.0,
+      "nist_Q_gaussian": 3.8570596027939583,
+      "nist_tail_chi2": 0.4256962230283913
+    },
+    {
+      "u_scale": 1.1,
+      "nist_Q_gaussian": 3.205215772221004,
+      "nist_tail_chi2": 0.5240889219579321
+    },
+    {
+      "u_scale": 1.2,
+      "nist_Q_gaussian": 2.7047303856990386,
+      "nist_tail_chi2": 0.6083871098437934
+    }
+  ],
+  "nominal_reference": {
+    "lambda_mle": 3.497130495236914,
+    "mu_scaled": 6.674300395607055
+  },
+  "notes": [
+    "Correlation scaling is R_prime = I + alpha*(R-I); alpha=0 removes reported off-diagonal correlations and alpha=1 is nominal.",
+    "The historical grid tests whether the learned proportional scale is qualitatively stable to plausible covariance perturbations.",
+    "The stress-grid NIST Q values use the exact historical GLS mean-variance term under the proportional Gaussian model and a plug-in chi-square reference; they are robustness screens, not the primary Student-t posterior predictive statistic."
+  ]
+}

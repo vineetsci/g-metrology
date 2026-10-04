@@ -1,0 +1,89 @@
+# data/codata_2010_g.yaml
+classification: historical/reference-only
+usage: retained for historical provenance and explicitly scoped sensitivity/reference analyses; not a current CODATA reference input.
+title: CODATA-2010 Gravitational Constant Dataset
+source: "CODATA recommended values of the fundamental physical constants: 2010 (Rev. Mod. Phys. 84, 1527–1605, 2012)"
+units:
+  value: "m^3 kg^-1 s^-2"
+  u_std: "m^3 kg^-1 s^-2"
+
+# CODATA-2010 used expanded a priori uncertainties for G to reduce inconsistencies;
+# we keep the original k=14.0 here for the record only.
+expansion_factor_k: 14
+
+measurements:
+  - label: NIST-82
+    method: fiber torsion balance, dynamic (time-of-swing)
+    reference: "Luther & Towler (1982)"
+    year: 1982
+    value_SI: 6.67248e-11
+    u_std_SI: 4.3e-15
+  - label: TR&D-96
+    method: fiber torsion balance, dynamic
+    reference: "Karagioz & Izmailov (1996)"
+    year: 1996
+    value_SI: 6.6729e-11
+    u_std_SI: 5e-15
+  - label: LANL-97
+    method: fiber torsion balance, dynamic
+    reference: "Bagley & Luther (1997)"
+    year: 1997
+    value_SI: 6.67398e-11
+    u_std_SI: 7.0e-15
+  - label: UWash-00
+    method: fiber torsion balance, dynamic compensation
+    reference: "Gundlach & Merkowitz (2000, 2002)"
+    year: 2000
+    value_SI: 6.674255e-11
+    u_std_SI: 9.2e-16
+  - label: BIPM-01
+    method: strip torsion balance, compensation/static deflection
+    reference: "Quinn et al. (2001)"
+    year: 2001
+    value_SI: 6.67559e-11
+    u_std_SI: 2.7e-15
+  - label: UWup-02
+    method: suspended body, displacement
+    reference: "Kleinevoß (2002); Kleinvoß et al. (2002)"
+    year: 2002
+    value_SI: 6.67422e-11
+    u_std_SI: 9.8e-15
+  - label: MSL-03
+    method: strip torsion balance, compensation
+    reference: "Armstrong & Fitzgerald (2003)"
+    year: 2003
+    value_SI: 6.67387e-11
+    u_std_SI: 2.7e-15
+  - label: HUST-05
+    method: fiber torsion balance, dynamic
+    reference: "Hu, Guo, & Luo (2005)"
+    year: 2005
+    value_SI: 6.67228e-11
+    u_std_SI: 8.7e-15
+  - label: UZur-06
+    method: stationary body, weight change
+    reference: "Schlamminger et al. (2006)"
+    year: 2006
+    value_SI: 6.67425e-11
+    u_std_SI: 1.2e-15
+  - label: HUST-09
+    method: fiber torsion balance, dynamic
+    reference: "Luo et al. (2009); Tu et al. (2010)"
+    year: 2009
+    value_SI: 6.67349e-11
+    u_std_SI: 1.8e-15
+  - label: JILA-10
+    method: suspended body, displacement
+    reference: "Parks & Faller (2010)"
+    year: 2010
+    value_SI: 6.67234e-11 # originally 6.67234e-11 but corrected to 6.67260e-11 in JILA-18
+    u_std_SI: 1.4e-15     # originally 1.4e-15 but corrected to 2.5e-15 in JILA-18
+
+# Correlations explicitly reported/used in CODATA-2010 for G
+correlations:
+  - i: 0   # NIST-82
+    j: 2   # LANL-97
+    r: 0.351
+  - i: 7   # HUST-05
+    j: 9   # HUST-09
+    r: 0.234 # originally 0.234 but corrected to 0.134 in later CODATA

@@ -1,0 +1,7 @@
+# Exact core and test environment.
+numpy==2.4.6
+scipy==1.18.1
+PyYAML==6.0.3
+numba==0.66.0
+matplotlib==3.11.1
+pytest==9.0.2

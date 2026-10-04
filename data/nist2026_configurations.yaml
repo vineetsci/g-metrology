@@ -1,0 +1,69 @@
+dataset: NIST-BIPM-2026 four-configuration internal results
+unit_si: m^3 kg^-1 s^-2
+source: "Schlamminger et al., Metrologia 63 (2026) 025012, Tables 14-19 and Sections 3, 7-9"
+doi: "10.1088/1681-7575/ae570f"
+measurements:
+  - {label: copper_servo,    value_SI: 6.673642e-11, u_relative: 23.2e-6, dark_u_SI: 7.24e-15,  config_effect_SI: -2.03e-15, year: 2026, method: torsion_balance, configuration: copper_servo}
+  - {label: copper_free,     value_SI: 6.674021e-11, u_relative: 30.3e-6, dark_u_SI: 5.08e-15,  config_effect_SI:  0.976e-15, year: 2026, method: torsion_balance, configuration: copper_free}
+  - {label: sapphire_servo,  value_SI: 6.672637e-11, u_relative: 37.5e-6, dark_u_SI: 22.0e-15, config_effect_SI: -12.0e-15, year: 2026, method: torsion_balance, configuration: sapphire_servo}
+  - {label: sapphire_free,   value_SI: 6.673636e-11, u_relative: 93.9e-6, dark_u_SI: 10.2e-15, config_effect_SI: -1.57e-15, year: 2026, method: torsion_balance, configuration: sapphire_free}
+correlations:
+  - {i: 0, j: 1, r: 0.42}
+  - {i: 0, j: 2, r: 0.38}
+  - {i: 0, j: 3, r: 0.12}
+  - {i: 1, j: 2, r: 0.23}
+  - {i: 1, j: 3, r: 0.23}
+  - {i: 2, j: 3, r: 0.25}
+
+# Table 14: relative G-shift support from the autocollimator non-linearity model.
+table14_autocollimator_support_ppm:
+  copper_servo_0:   {a: -1.3,  b: 23.7,  u_r: 14.2}
+  copper_servo_120: {a:  0.0,  b: 11.2,  u_r:  6.8}
+  copper_servo_240: {a: -0.2,  b:  6.1,  u_r:  3.7}
+  copper_free_0:   {a: -2.8,  b: 20.4,  u_r: 12.0}
+  copper_free_120: {a: -2.0,  b: 21.0,  u_r: 12.5}
+  copper_free_240: {a: -10.7,  b: 22.1,  u_r: 12.9}
+  sapphire_servo:  {a: -0.4,  b: 15.3,  u_r:  9.3}
+  sapphire_free:   {a: -2.8,  b: 140.9,  u_r: 85.7}
+  note: "The four final-result autocollimator uncertainty contributions are treated as fully correlated because they arise from the same underlying non-linearity model."
+
+# Table 15: selected raw torque differences (the table contains eight torque values).
+table15_torque_nNm:
+  copper_0:   {free: 31.1979, free_u_typeA: 0.0003, servo: 31.1962, servo_u_typeA: 0.0004, R_s_mm: 213.9642, Gamma_max: 0.485637}
+  copper_120: {free: 31.1842, free_u_typeA: 0.0003, servo: 31.1828, servo_u_typeA: 0.0006, R_s_mm: 213.9817, Gamma_max: 0.485467}
+  copper_240: {free: 31.1856, free_u_typeA: 0.0002, servo: 31.1836, servo_u_typeA: 0.0003, R_s_mm: 213.9822, Gamma_max: 0.485464}
+  sapphire:   {free: 13.9799, free_u_typeA: 0.0002, servo: 13.9778, servo_u_typeA: 0.0003, R_s_mm: 213.9680, Gamma_max: 0.485613}
+  note: "Type-A uncertainties shown here are k=1, as in the published table."
+
+# Table 17: combined uncertainty-budget contributions, relative (ppm, k=1).
+table17_uncertainty_budget_ppm:
+  labels: [mass_integration, autocollimator_nonlinearity, type_A, capacitance_measurement, voltage_measurement, zero_torque, pressure_correction, SM_MCR_Rs, mass_of_one_SM, mass_of_one_TM, MOI_disk, TM_MCR_Rt, anelasticity, period_measurement]
+  rows:
+    copper_servo: [16.2, 10.7, 7.6, 6.0, 6.0, 5.4, 1.6, 1.0, 0.2, 0.1, 0.0, 0.0, 0.0, 0.0]
+    copper_free: [16.2, 14.2, 4.6, 0.0, 0.0, 5.4, 1.6, 1.0, 0.2, 0.0, 19.8, 2.9, 0.7, 0.5]
+    sapphire_servo: [16.2, 9.3, 19.5, 6.0, 6.0, 12.1, 21.5, 1.0, 0.4, 0.1, 0.0, 0.0, 0.0, 0.0]
+    sapphire_free: [16.2, 85.7, 13.9, 0.0, 0.0, 12.1, 21.5, 1.0, 0.4, 0.0, 19.8, 2.9, 0.7, 0.5]
+  combined_ppm: {copper_servo: 23.2, copper_free: 30.3, sapphire_servo: 37.5, sapphire_free: 93.9}
+
+# Table 19: Bayesian consensus and configuration-specific effects/dark uncertainties.
+table19_bayesian_consensus:
+  reference_tau_G_SI: 9.6e-15
+  configurations:
+    copper_servo: {tau_SI: 7.24e-15, lambda_SI: -2.03e-15}
+    copper_free: {tau_SI: 5.08e-15, lambda_SI: 0.976e-15}
+    sapphire_servo: {tau_SI: 2.20e-14, lambda_SI: -1.20e-14}
+    sapphire_free: {tau_SI: 1.02e-14, lambda_SI: -1.57e-15}
+  final_consensus: {G_SI: 6.67387e-11, u_SI: 3.8e-15, relative_u: 5.7e-5}
+  note: "Table 19 reports posterior medians for dark uncertainties and configuration effects; the final consensus is the published Bayesian result."
+
+# Thermal statement from Section 8.5 / mechanism discussion.
+thermal_statement:
+  relative_scale: 1.0e-4
+  reference_signal_nNm: 13.9799
+  torque_scale_pNm: 1.39799
+  wording: "The paper reports a gas-mediated thermal torque scale of about 10^-4 (0.01%) of the lowest gravitational signal; no significant time-dependent torque was observed after servo-voltage application."
+
+notes: >
+  These four rows are internal configurations of one NIST/BIPM replication.
+  They are not four independent world measurements and must not be naively
+  appended to the CODATA world dataset.

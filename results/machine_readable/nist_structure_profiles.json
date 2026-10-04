@@ -1,0 +1,73 @@
+{
+  "input_source": "data/nist2026_configurations.yaml",
+  "fits": [
+    {
+      "name": "material_effect",
+      "mu_si": 6.672762162445496e-11,
+      "components_si": {
+        "material": 9.822404856968558e-15
+      },
+      "loglik": -3.386708964958757,
+      "aic": 10.773417929917514,
+      "success": true
+    },
+    {
+      "name": "independent_dark",
+      "mu_si": 6.673482779274459e-11,
+      "components_si": {
+        "delta": 5.0636010776496476e-15
+      },
+      "loglik": -3.3888846691580596,
+      "aic": 10.77776933831612,
+      "success": true
+    },
+    {
+      "name": "material_plus_mode",
+      "mu_si": 6.673047550474986e-11,
+      "components_si": {
+        "material": 9.290486190283775e-15,
+        "mode": 3.482640207956664e-15
+      },
+      "loglik": -2.522789327158731,
+      "aic": 11.045578654317463,
+      "success": true
+    },
+    {
+      "name": "material_mode_residual",
+      "mu_si": 6.673047547303522e-11,
+      "components_si": {
+        "material": 9.290841996524412e-15,
+        "mode": 3.4826601352915477e-15,
+        "residual": 2.6239503175163996e-19
+      },
+      "loglik": -2.5227893398104544,
+      "aic": 13.04557867962091,
+      "success": true
+    },
+    {
+      "name": "mode_effect",
+      "mu_si": 6.673941074094306e-11,
+      "components_si": {
+        "mode": 4.61859465237926e-15
+      },
+      "loglik": -8.800739216779924,
+      "aic": 21.601478433559848,
+      "success": true
+    },
+    {
+      "name": "common_mean_random_effect",
+      "mu_si": 6.673611063585955e-11,
+      "components_si": {
+        "common": 6.144212571688921e-20
+      },
+      "loglik": -10.64956043243943,
+      "aic": 25.29912086487886,
+      "success": true
+    }
+  ],
+  "interpretation": {
+    "lowest_aic_model": "material_effect",
+    "aic_gap_to_independent_dark": 0.004351408398605372,
+    "selection_note": "AIC differences this small should be treated as effectively indistinguishable."
+  }
+}

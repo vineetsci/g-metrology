@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "codata_2010_g.yaml",
+      "bytes": 2900,
+      "sha256": "4cf2d12f05bf7e0031054821e7d25066376d87f369d23a52fe568fe833a13276"
+    },
+    {
+      "path": "codata_2018_g.yaml",
+      "bytes": 5093,
+      "sha256": "f7769f47dd4db10ba25f9663e921e9f48035ff753e47ad2a277976dad33ef662"
+    },
+    {
+      "path": "nist2026_configurations.yaml",
+      "bytes": 4598,
+      "sha256": "8d1255f63ec2fc080dbb40f28b30411881695d84c893dd89f56ee612482bbf30"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "hierarchical": {
+    "posterior_draws": 40000,
+    "reference_discrepancy": {
+      "mu": 0.2825456962334636,
+      "tau": 0.7012896208940934,
+      "lambda": 1.6299101682784738,
+      "Q_obs": 3.090462310890216
+    },
+    "posterior_averaged_conditional_tail": 0.606961705198385,
+    "median_draw_conditional_tail": 0.6365538648392923,
+    "lppd_2026": -4.752426578020734,
+    "full_posterior_predictive_mixture_tail": 0.656075,
+    "mixture_tail_mc_se": 0.002375082074239751,
+    "median_Q_obs_draw_dependent": 2.606382190971223
+  },
+  "lambda_only": {
+    "lambda_only_reference_posterior_averaged_conditional_tail": 0.444387180432389,
+    "fixed_discrepancy_definition": {
+      "mu_si": 6.674300395607055e-11,
+      "birge_scale": 3.6118209093934524,
+      "Q_obs": 3.615993248053769
+    },
+    "full_posterior_predictive_mixture_tail": 0.44407,
+    "mixture_tail_mc_se": 0.0011110171805602288,
+    "mc_replicates": 200000,
+    "conditional_tail_quadrature_grid_points": 18000
+  },
+  "interpretation": [
+    "The posterior-averaged conditional tail and the fixed-discrepancy posterior-predictive mixture tail are distinct statistics.",
+    "Both hierarchical values classify the observed 2026 four-vector as ordinary under the historical model.",
+    "The lambda-only value is likewise ordinary; the fixed-discrepancy mixture calculation is an additional validation cross-check, not a replacement for the historical lambda-only statistic."
+  ]
+}

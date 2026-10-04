@@ -1,0 +1,157 @@
+{
+  "source": "Schlamminger et al. 2026, Metrologia 63 025012, Tables 14-19 and Sections 3, 7-9",
+  "table15_common_mode_offset": {
+    "estimate_pNm": 1.918354430380726,
+    "se_pNm": 0.21513169354983533,
+    "chi2": 1.0928919182127061,
+    "dof": 3,
+    "p": 0.7787902741569385
+  },
+  "common_offset_predicted_G_shift_e15": [
+    4.103753163605568,
+    4.105556045139852,
+    4.10537173640559,
+    9.158039815939325
+  ],
+  "common_offset_predicted_G_shift_se_e15": [
+    0.460210769196465,
+    0.46041295131234394,
+    0.4603922822172539,
+    1.0270180442145074
+  ],
+  "discriminator_predictions": {
+    "gravitational_torque_levels_nNm": [
+      14.0,
+      31.0,
+      62.0
+    ],
+    "absolute_offset_predicted_ppm": [
+      137.02531645576616,
+      61.88240098002343,
+      30.941200490011713
+    ],
+    "fractional_scale_predicted_ppm": [
+      67.47729268844982,
+      67.47729268844982,
+      67.47729268844982
+    ]
+  },
+  "published_G_mode_contrasts": [
+    {
+      "label": "copper",
+      "delta_G_e15": 3.790000000003561,
+      "se_G_e15": 1.9638140972653453,
+      "relative_ppm": 56.788967476981725,
+      "z": 1.9299179109067506,
+      "p_two_sided": 0.0536170097965901
+    },
+    {
+      "label": "sapphire",
+      "delta_G_e15": 9.990000000002464,
+      "se_G_e15": 6.139265460026133,
+      "relative_ppm": 149.70471531644026,
+      "z": 1.627230499324253,
+      "p_two_sided": 0.10368815243095882
+    }
+  ],
+  "required_mode_difference_ppm": {
+    "copper": 56.788967476981725,
+    "sapphire": 149.70471531644026
+  },
+  "autocollimator_table14_pair_support_ppm": {
+    "cu0": {
+      "min_ppm": -26.5,
+      "max_ppm": 21.7,
+      "width_ppm": 48.2
+    },
+    "cu120": {
+      "min_ppm": -13.2,
+      "max_ppm": 21.0,
+      "width_ppm": 34.2
+    },
+    "cu240": {
+      "min_ppm": -16.799999999999997,
+      "max_ppm": 22.3,
+      "width_ppm": 39.099999999999994
+    },
+    "sapphire": {
+      "min_ppm": -18.1,
+      "max_ppm": 141.3,
+      "width_ppm": 159.4
+    }
+  },
+  "thermal_torque_scale_pNm_from_paper_statement": 1.39799,
+  "table17_absolute_torque_uncertainty_scales_pNm": {
+    "copper_servo": {
+      "mass_integration": 0.0005054059799999999,
+      "autocollimator_nonlinearity": 0.00033381753,
+      "type_A": 0.00023710403999999997,
+      "capacitance_measurement": 0.0001871874,
+      "voltage_measurement": 0.0001871874,
+      "zero_torque": 0.00016846866,
+      "pressure_correction": 4.991664e-05,
+      "SM_MCR_Rs": 3.11979e-05,
+      "mass_of_one_SM": 6.23958e-06,
+      "mass_of_one_TM": 3.11979e-06,
+      "MOI_disk": 0.0,
+      "TM_MCR_Rt": 0.0,
+      "anelasticity": 0.0,
+      "period_measurement": 0.0
+    },
+    "copper_free": {
+      "mass_integration": 0.0005051840399999999,
+      "autocollimator_nonlinearity": 0.00044281563999999993,
+      "type_A": 0.00014344731999999997,
+      "capacitance_measurement": 0.0,
+      "voltage_measurement": 0.0,
+      "zero_torque": 0.00016839468,
+      "pressure_correction": 4.9894719999999997e-05,
+      "SM_MCR_Rs": 3.11842e-05,
+      "mass_of_one_SM": 6.2368399999999996e-06,
+      "mass_of_one_TM": 0.0,
+      "MOI_disk": 0.00061744716,
+      "TM_MCR_Rt": 9.043418e-05,
+      "anelasticity": 2.182894e-05,
+      "period_measurement": 1.55921e-05
+    },
+    "sapphire_servo": {
+      "mass_integration": 0.00050520672,
+      "autocollimator_nonlinearity": 0.00029002608000000004,
+      "type_A": 0.0006081192,
+      "capacitance_measurement": 0.0001871136,
+      "voltage_measurement": 0.0001871136,
+      "zero_torque": 0.00037734576,
+      "pressure_correction": 0.0006704904,
+      "SM_MCR_Rs": 3.11856e-05,
+      "mass_of_one_SM": 1.247424e-05,
+      "mass_of_one_TM": 3.11856e-06,
+      "MOI_disk": 0.0,
+      "TM_MCR_Rt": 0.0,
+      "anelasticity": 0.0,
+      "period_measurement": 0.0
+    },
+    "sapphire_free": {
+      "mass_integration": 0.00022647437999999997,
+      "autocollimator_nonlinearity": 0.00119807743,
+      "type_A": 0.00019432061,
+      "capacitance_measurement": 0.0,
+      "voltage_measurement": 0.0,
+      "zero_torque": 0.00016915679,
+      "pressure_correction": 0.00030056785,
+      "SM_MCR_Rs": 1.39799e-05,
+      "mass_of_one_SM": 5.59196e-06,
+      "mass_of_one_TM": 0.0,
+      "MOI_disk": 0.00027680202,
+      "TM_MCR_Rt": 4.054171e-05,
+      "anelasticity": 9.78593e-06,
+      "period_measurement": 6.98995e-06
+    }
+  },
+  "interpretation": {
+    "common_torque": "All four raw Table-15 free-minus-servo torque differences are consistent with one common absolute torque offset using Type-A errors alone.",
+    "material": "The larger sapphire G contrast can arise from a common absolute torque offset because the sapphire gravitational torque is smaller; this does not establish a material-dependent gravitational effect.",
+    "autocollimator": "The very broad Table-14 correction support for sapphire-free is large enough to overlap the observed sapphire mode contrast, but copper pairwise support is much smaller than the observed copper contrast. Because the calibration errors are fully correlated, this interval check cannot identify causation.",
+    "thermal": "The paper reports a gas-mediated thermal torque scale of about 10^-4 (0.01%) of the lowest gravitational signal, about 1.4 pN m, which is comparable to the observed ~1.9 pN m mode offset. The paper also reports no significant time-dependent torque after servo-voltage application, so this is a magnitude comparison, not a mechanism identification.",
+    "electrostatic": "Capacitance and voltage uncertainties are each 6 ppm in servo mode; the paper gives no signed residual capable of converting these uncertainty magnitudes into a predicted 2 pN m bias."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "start_train": 7,
+  "draws": 1400,
+  "burn": 900,
+  "chains": 2,
+  "n_predictions": 10,
+  "rows": [
+    {
+      "train_end_year": 2003,
+      "holdout_year": 2005,
+      "holdout_label": "HUST-05",
+      "free": -2.20218525259191,
+      "train_gls": -2.4761748645464854,
+      "train_gls_minus_free": -0.2739896119545753
+    },
+    {
+      "train_end_year": 2005,
+      "holdout_year": 2006,
+      "holdout_label": "UZur-06",
+      "free": -1.0483175689706696,
+      "train_gls": -0.5229793717360609,
+      "train_gls_minus_free": 0.5253381972346087
+    },
+    {
+      "train_end_year": 2006,
+      "holdout_year": 2009,
+      "holdout_label": "HUST-09",
+      "free": -1.0993812029664722,
+      "train_gls": -1.220281545511809,
+      "train_gls_minus_free": -0.12090034254533677
+    },
+    {
+      "train_end_year": 2009,
+      "holdout_year": 2014,
+      "holdout_label": "BIPM-14",
+      "free": -2.6615788269197607,
+      "train_gls": -2.615735698173821,
+      "train_gls_minus_free": 0.045843128745939765
+    },
+    {
+      "train_end_year": 2014,
+      "holdout_year": 2014,
+      "holdout_label": "LENS-14",
+      "free": -2.3292835698671173,
+      "train_gls": -2.5457405729181337,
+      "train_gls_minus_free": -0.21645700305101645
+    },
+    {
+      "train_end_year": 2014,
+      "holdout_year": 2014,
+      "holdout_label": "UCI-14",
+      "free": -0.787493985430519,
+      "train_gls": -0.5789626174269289,
+      "train_gls_minus_free": 0.20853136800359007
+    },
+    {
+      "train_end_year": 2014,
+      "holdout_year": 2018,
+      "holdout_label": "HUSTT-18",
+      "free": -0.713678670153099,
+      "train_gls": -0.28492035164384166,
+      "train_gls_minus_free": 0.4287583185092574
+    },
+    {
+      "train_end_year": 2018,
+      "holdout_year": 2018,
+      "holdout_label": "HUSTA-18",
+      "free": -0.6489555843606167,
+      "train_gls": -0.1962769663131061,
+      "train_gls_minus_free": 0.45267861804751064
+    },
+    {
+      "train_end_year": 2018,
+      "holdout_year": 2018,
+      "holdout_label": "JILA-18",
+      "free": -2.3941537521413343,
+      "train_gls": -2.935535914760136,
+      "train_gls_minus_free": -0.5413821626188016
+    },
+    {
+      "train_end_year": 2018,
+      "holdout_year": 2026,
+      "holdout_label": "NIST-BIPM-2026",
+      "free": -1.0125996745739068,
+      "train_gls": -1.103274306282537,
+      "train_gls_minus_free": -0.09067463170863022
+    }
+  ],
+  "cumulative_train_gls_minus_free": 0.4177458786625463,
+  "mean_train_gls_minus_free": 0.04177458786625463,
+  "sd_train_gls_minus_free": 0.35445184278395003
+}

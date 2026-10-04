@@ -1,0 +1,26 @@
+{
+  "input_source": "data/nist2026_configurations.yaml",
+  "estimates_si": [
+    6.674021000000001e-11,
+    -3.79000000001126e-15,
+    -1.0050000000007733e-14,
+    6.200000000001698e-15
+  ],
+  "standard_errors_si": [
+    2.0222283630000006e-15,
+    1.9638140972653453e-15,
+    2.3903995032783344e-15,
+    6.117981225513703e-15
+  ],
+  "interaction_contrast_sapphire_difference_of_differences_si": -6.199999999998903e-15,
+  "interaction_se_si": 6.117981225513703e-15,
+  "interaction_z": -1.01340618276878,
+  "interaction_p_two_sided": 0.3108661874152303,
+  "intercept_only_q": 25.038374952071454,
+  "additive_q": 1.0269920912739896,
+  "additive_lr_2df": 24.011382860797465,
+  "additive_p_chi2_2df": 6.109342320673031e-06,
+  "gls_mean_si": 6.673611063585956e-11,
+  "gls_mean_se_si": 1.4153914783378332e-15,
+  "interpretation": "The interaction tests whether the material contrast differs between servo and free modes. A large interaction p-value supports an additive description but cannot establish a material mechanism."
+}

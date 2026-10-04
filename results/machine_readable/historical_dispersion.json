@@ -1,0 +1,34 @@
+{
+  "fits": {
+    "all": {
+      "beta_si": [
+        6.674300395607055e-11
+      ],
+      "beta_se_si": [
+        3.789129296229382e-16
+      ],
+      "q": 195.67875422297618,
+      "dof": 15,
+      "p": 1.6018784725331363e-33,
+      "lambda_mle": 3.497130557891142,
+      "birge_ratio": 3.6118209093934524
+    },
+    "exclude_BIPM14_only": {
+      "beta_si": [
+        6.674226742912876e-11
+      ],
+      "beta_se_si": [
+        3.9000731092006853e-16
+      ],
+      "q": 132.0881583531812,
+      "dof": 14,
+      "p": 2.6288041931958816e-21,
+      "lambda_mle": 2.967469835321905,
+      "birge_ratio": 3.071623097614461
+    }
+  },
+  "parameter_conventions": {
+    "lambda_mle": "Gaussian proportional covariance-scale maximum-likelihood estimate: sqrt(Q/N).",
+    "birge_ratio": "Metrology consistency/expansion diagnostic: sqrt(Q/nu), with nu=N-M adjusted degrees of freedom."
+  }
+}

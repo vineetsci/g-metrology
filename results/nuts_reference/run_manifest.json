@@ -1,0 +1,27 @@
+{
+  "free": {
+    "file": "results/nuts_reference/free.nc",
+    "summary_keys": [
+      "mu",
+      "tau",
+      "lambda",
+      "nu_minus2",
+      "nu",
+      "Sigma",
+      "mu_g",
+      "tau_g"
+    ]
+  },
+  "codata": {
+    "file": "results/nuts_reference/codata.nc",
+    "summary_keys": [
+      "tau",
+      "lambda",
+      "nu_minus2",
+      "nu",
+      "Sigma",
+      "mu_g",
+      "tau_g"
+    ]
+  }
+}

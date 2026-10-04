@@ -1,0 +1,389 @@
+{
+  "purpose": "NUTS diagnostics completion from already-saved PyMC/NUTS NetCDF outputs: rank-normalized R-hat, bulk/tail ESS, BFMI, divergences, energy, tree depth, acceptance rate, step size, and chain summaries.",
+  "files": {
+    "free": "results/nuts_reference/free.nc",
+    "codata": "results/nuts_reference/codata.nc"
+  },
+  "models": {
+    "free": {
+      "chains": 4,
+      "draws_per_chain": 4000,
+      "variables": {
+        "mu": {
+          "mean": 0.25990277977251275,
+          "sd": 0.2924151929987249,
+          "r_hat_rank": 1.000465854156109,
+          "ess_bulk": 5539.977128311475,
+          "ess_tail": 7856.600619730994,
+          "chain_means": [
+            0.25530377925128317,
+            0.2568915721451727,
+            0.26821334171468997,
+            0.25920242597890514
+          ],
+          "chain_sds": [
+            0.2997420140882464,
+            0.2949893923208339,
+            0.28133087776001336,
+            0.2932232050356433
+          ],
+          "chain_mean_range": 0.012909562463406798
+        },
+        "tau": {
+          "mean": 0.6887564796650394,
+          "sd": 0.40520799015835124,
+          "r_hat_rank": 1.0006235027086179,
+          "ess_bulk": 3932.5514883175288,
+          "ess_tail": 3184.148071162132,
+          "chain_means": [
+            0.6945811995314529,
+            0.6906305751506151,
+            0.6847397732725624,
+            0.6850743707055269
+          ],
+          "chain_sds": [
+            0.41035930843972174,
+            0.401608632667445,
+            0.40092705271025925,
+            0.40792564444142276
+          ],
+          "chain_mean_range": 0.009841426258890507
+        },
+        "lambda": {
+          "mean": 1.909068843906094,
+          "sd": 1.2902543800738027,
+          "r_hat_rank": 1.0004725750665717,
+          "ess_bulk": 4816.373535020957,
+          "ess_tail": 6548.431029887007,
+          "chain_means": [
+            1.8922093693174944,
+            1.9050879423151987,
+            1.903376637290778,
+            1.9356014267009056
+          ],
+          "chain_sds": [
+            1.2973388614286852,
+            1.2893021302863792,
+            1.259087048788864,
+            1.3147430592787728
+          ],
+          "chain_mean_range": 0.04339205738341123
+        },
+        "nu_minus2": {
+          "mean": 28.636943578959567,
+          "sd": 27.686438825162817,
+          "r_hat_rank": 1.0005766118899202,
+          "ess_bulk": 5587.313747073798,
+          "ess_tail": 4719.891713453446,
+          "chain_means": [
+            28.50962142012819,
+            29.699804398519003,
+            27.8383408718672,
+            28.500007625323885
+          ],
+          "chain_sds": [
+            27.934760848711008,
+            28.88550554094589,
+            26.39374420813273,
+            27.451315949327686
+          ],
+          "chain_mean_range": 1.8614635266518036
+        },
+        "nu": {
+          "mean": 30.63694357895957,
+          "sd": 27.686438825162817,
+          "r_hat_rank": 1.0005766118899202,
+          "ess_bulk": 5587.313747073798,
+          "ess_tail": 4719.891713453446,
+          "chain_means": [
+            30.509621420128195,
+            31.699804398519003,
+            29.8383408718672,
+            30.50000762532388
+          ],
+          "chain_sds": [
+            27.934760848711008,
+            28.88550554094589,
+            26.39374420813273,
+            27.451315949327686
+          ],
+          "chain_mean_range": 1.8614635266518036
+        }
+      },
+      "sample_stats": {
+        "available_sample_stats": [
+          "acceptance_rate",
+          "divergences",
+          "diverging",
+          "energy",
+          "energy_error",
+          "index_in_trajectory",
+          "largest_eigval",
+          "lp",
+          "max_energy_error",
+          "n_steps",
+          "perf_counter_diff",
+          "perf_counter_start",
+          "process_time_diff",
+          "reached_max_treedepth",
+          "smallest_eigval",
+          "step_size",
+          "step_size_bar",
+          "tree_depth"
+        ],
+        "divergences_total": 0,
+        "divergences_by_chain": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "energy_mean_by_chain": [
+          32.26116021773343,
+          32.21768092870341,
+          32.16935821834131,
+          32.15582307021341
+        ],
+        "energy_sd_by_chain": [
+          2.1785458606032835,
+          2.056993614365289,
+          2.113441825332723,
+          2.070153635048038
+        ],
+        "bfmi_by_chain": [
+          0.8979504127888923,
+          0.9342836663345334,
+          0.9500270390581033,
+          0.9124189195727933
+        ],
+        "bfmi_min": 0.8979504127888923,
+        "tree_depth_max": 6,
+        "tree_depth_mean_by_chain": [
+          3.71325,
+          3.768,
+          3.6775,
+          3.57775
+        ],
+        "tree_depth_max_fraction_by_chain": [
+          0.099,
+          0.00025,
+          0.0005,
+          0.05975
+        ],
+        "acceptance_rate_mean_by_chain": [
+          0.9540790103103531,
+          0.9630326482335154,
+          0.956192752614825,
+          0.8946574143238523
+        ],
+        "final_step_size_by_chain": [
+          0.2608504541085958,
+          0.2735631884404522,
+          0.28102696103327435,
+          0.220791702615072
+        ],
+        "n_steps_mean_by_chain": [
+          13.217,
+          13.689,
+          12.8875,
+          11.9305
+        ],
+        "n_steps_max_by_chain": [
+          31.0,
+          47.0,
+          47.0,
+          31.0
+        ]
+      },
+      "checks": {
+        "rhat_all_le_1.01": true,
+        "ess_all_ge_1000": true,
+        "zero_divergences": true,
+        "bfmi_all_gt_0.3": true
+      }
+    },
+    "codata": {
+      "chains": 4,
+      "draws_per_chain": 4000,
+      "variables": {
+        "tau": {
+          "mean": 0.42207768304421966,
+          "sd": 0.35191115629184766,
+          "r_hat_rank": 1.000358877832654,
+          "ess_bulk": 4305.550894256726,
+          "ess_tail": 4788.399549695182,
+          "chain_means": [
+            0.42223025354362465,
+            0.41434591876420074,
+            0.4214792920563522,
+            0.43025526781270107
+          ],
+          "chain_sds": [
+            0.3509445748473374,
+            0.3577195375166987,
+            0.3469416232947214,
+            0.3519060012492853
+          ],
+          "chain_mean_range": 0.015909349048500332
+        },
+        "lambda": {
+          "mean": 2.692601522426966,
+          "sd": 1.1815366170409147,
+          "r_hat_rank": 1.000681629730065,
+          "ess_bulk": 5454.862199071622,
+          "ess_tail": 4554.438038472762,
+          "chain_means": [
+            2.7039276689660534,
+            2.7020194437891005,
+            2.6865858276730314,
+            2.677873149279679
+          ],
+          "chain_sds": [
+            1.1851673481291605,
+            1.169205567541572,
+            1.1754136124326307,
+            1.1964245569840952
+          ],
+          "chain_mean_range": 0.026054519686374622
+        },
+        "nu_minus2": {
+          "mean": 27.903704907520115,
+          "sd": 26.859609249585287,
+          "r_hat_rank": 1.0005158092103668,
+          "ess_bulk": 5469.128185884193,
+          "ess_tail": 4582.68447918659,
+          "chain_means": [
+            27.940520678142878,
+            28.297755462940586,
+            27.23356125676044,
+            28.142982232236545
+          ],
+          "chain_sds": [
+            27.08659275919248,
+            27.617149400847627,
+            26.450843243690638,
+            26.260139957944588
+          ],
+          "chain_mean_range": 1.0641942061801473
+        },
+        "nu": {
+          "mean": 29.903704907520115,
+          "sd": 26.859609249585287,
+          "r_hat_rank": 1.0005158092103668,
+          "ess_bulk": 5469.128185884193,
+          "ess_tail": 4582.68447918659,
+          "chain_means": [
+            29.940520678142878,
+            30.297755462940586,
+            29.23356125676044,
+            30.142982232236545
+          ],
+          "chain_sds": [
+            27.08659275919248,
+            27.617149400847627,
+            26.450843243690635,
+            26.260139957944588
+          ],
+          "chain_mean_range": 1.0641942061801473
+        }
+      },
+      "sample_stats": {
+        "available_sample_stats": [
+          "acceptance_rate",
+          "divergences",
+          "diverging",
+          "energy",
+          "energy_error",
+          "index_in_trajectory",
+          "largest_eigval",
+          "lp",
+          "max_energy_error",
+          "n_steps",
+          "perf_counter_diff",
+          "perf_counter_start",
+          "process_time_diff",
+          "reached_max_treedepth",
+          "smallest_eigval",
+          "step_size",
+          "step_size_bar",
+          "tree_depth"
+        ],
+        "divergences_total": 0,
+        "divergences_by_chain": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "energy_mean_by_chain": [
+          28.997643267884072,
+          29.077303457245712,
+          28.95748446011523,
+          28.94392498957807
+        ],
+        "energy_sd_by_chain": [
+          1.9230567768515263,
+          1.8895488336043105,
+          1.8377781580431705,
+          1.874693000299776
+        ],
+        "bfmi_by_chain": [
+          0.844939892824014,
+          0.8817399635027499,
+          0.8983291043469895,
+          0.8440233730945401
+        ],
+        "bfmi_min": 0.8440233730945401,
+        "tree_depth_max": 6,
+        "tree_depth_mean_by_chain": [
+          3.26625,
+          3.338,
+          3.31325,
+          3.57125
+        ],
+        "tree_depth_max_fraction_by_chain": [
+          0.0105,
+          0.0235,
+          0.01825,
+          0.00025
+        ],
+        "acceptance_rate_mean_by_chain": [
+          0.9401243576451882,
+          0.9493135556691334,
+          0.9415465023652207,
+          0.9674417181550892
+        ],
+        "final_step_size_by_chain": [
+          0.2166367106356483,
+          0.21771492761219832,
+          0.2653056208869813,
+          0.38619720007598685
+        ],
+        "n_steps_mean_by_chain": [
+          9.4565,
+          9.9955,
+          9.823,
+          11.8135
+        ],
+        "n_steps_max_by_chain": [
+          31.0,
+          31.0,
+          31.0,
+          55.0
+        ]
+      },
+      "checks": {
+        "rhat_all_le_1.01": true,
+        "ess_all_ge_1000": true,
+        "zero_divergences": true,
+        "bfmi_all_gt_0.3": true
+      }
+    }
+  },
+  "initialization_robustness": {
+    "status": "not_separately_tested",
+    "disposition": "non_blocking",
+    "reason": "The saved NUTS run provides four-chain convergence, but starting states are not retained for this purpose, so a deliberate multi-start sensitivity experiment cannot be reconstructed retrospectively. This is supplementary sampler robustness testing, not a requirement for the present scientific conclusion."
+  },
+  "overall_interpretation": "The report closes the NUTS sampler-diagnostics cross-check if all model checks pass. A deliberate multi-start initialization experiment was not performed and is treated as non-blocking supplementary robustness work rather than an unresolved defect."
+}

@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+title: "G Metrology Software: Covariance scaling and a dual-mode torque diagnostic in measurements of the gravitational constant"
+type: software
+version: 1.0.0
+
+authors:
+  - given-names: "Vineet"
+    family-names: "Kumar"
+    orcid: "https://orcid.org/0009-0006-7703-6695"
+
+license: MIT
+
+repository-code: "https://github.com/vineetsci/g-metrology"
+url: "https://github.com/vineetsci/g-metrology"
+
+keywords:
+  - gravitational constant
+  - Newtonian constant of gravitation
+  - fundamental constants
+  - metrology
+  - covariance analysis
+  - uncertainty quantification
+  - measurement uncertainty
+  - reproducibility
+  - reproducible research
+  - hierarchical Bayesian models
+  - dark uncertainty
+  - torsion balance
+  - torque systematics
+  - CODATA
+  - NIST 2026
+  - BIPM
+  - prospective validation
+
+abstract: "Reproducibility package for the accompanying study on covariance scaling
+  and a dual-mode torque diagnostic in measurements of the gravitational
+  constant. Contains the curated input datasets, the shared statistical
+  implementation, the executable analyses, the regression tests, and the
+  generators for every figure and table in the manuscript. Running
+  reproduce.py --core regenerates the primary results; --full and --archive
+  add supplementary and archival analyses, including the full Bayesian
+  simulation-based calibration."

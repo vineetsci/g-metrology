@@ -1,0 +1,102 @@
+{
+  "analysis": "Prospective NIST prediction",
+  "input_sources": [
+    "data/codata_2018_g.yaml",
+    "data/nist2026_configurations.yaml"
+  ],
+  "primary_configuration": "exclude_BIPM14_only",
+  "primary_exclusion": {
+    "measurement_label": "BIPM-14",
+    "reason": "The primary prospective test excludes the historical BIPM-14 determination because the later NIST configuration is lineage-related to the BIPM apparatus. This reduces direct historical overlap in the reference distribution; it does not make the NIST result an orthogonally independent replication."
+  },
+  "parameter_conventions": {
+    "lambda_mle": "Gaussian proportional covariance-scale maximum-likelihood estimate: sqrt(Q/N).",
+    "birge_ratio": "Metrology consistency/expansion diagnostic: sqrt(Q/nu), with nu=N-M adjusted degrees of freedom.",
+    "uniform_predictive_convention": "Apply the fitted historical lambda multiplicatively to both the historical-mean variance and the reported NIST covariance.",
+    "mean_only_predictive_convention": "Apply the fitted historical lambda only to the historical-mean variance; leave the reported NIST covariance unchanged. This is a sensitivity analysis with plug-in chi-square reference only.",
+    "uniform_finite_sample_reference": "Under independent Gaussian common-scale assumptions, (nu/(N*m))*Q_uniform follows F(m,nu), where N is the historical training count, nu=N-1, and m is the NIST vector dimension."
+  },
+  "configurations": {
+    "exclude_BIPM14_only": {
+      "historical_mean_SI": 6.674226742912876e-11,
+      "lambda_mle": 2.967469835321905,
+      "birge_ratio": 3.071623097614461,
+      "Q_without_inflation": 42.62463368656711,
+      "p_without_inflation": 1.2380069046029972e-08,
+      "Q_with_uniform_inflation": 4.840475582897762,
+      "p_with_uniform_inflation_chi2": 0.3040607648643239,
+      "p_with_uniform_inflation_finite_sample": 0.3822864894701694,
+      "finite_sample_F_statistic": 1.1294443026761445,
+      "finite_sample_F_degrees_of_freedom": [
+        4,
+        14
+      ],
+      "Q_with_mean_only_inflation": 36.37814668304637,
+      "p_with_mean_only_inflation_chi2": 2.419022008278876e-07,
+      "final_NIST_G_SI": 6.67387e-11,
+      "final_NIST_u_SI": 3.8e-15,
+      "historical_mean_se_after_uniform_inflation_SI": 1.1573349307103147e-15,
+      "final_NIST_vs_historical_z": -0.8980691523705222,
+      "training_count": 15,
+      "training_dof": 14,
+      "training_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "all_history": {
+      "historical_mean_SI": 6.674300395607055e-11,
+      "lambda_mle": 3.497130557891142,
+      "birge_ratio": 3.6118209093934524,
+      "Q_without_inflation": 47.17153693719032,
+      "p_without_inflation": 1.4044771893984726e-09,
+      "Q_with_uniform_inflation": 3.8570594645906873,
+      "p_with_uniform_inflation_chi2": 0.4256962423999625,
+      "p_with_uniform_inflation_finite_sample": 0.4863055977689787,
+      "finite_sample_F_statistic": 0.9039983120134423,
+      "finite_sample_F_degrees_of_freedom": [
+        4,
+        15
+      ],
+      "Q_with_mean_only_inflation": 37.67864541400265,
+      "p_with_mean_only_inflation_chi2": 1.3053078423527045e-07,
+      "final_NIST_G_SI": 6.67387e-11,
+      "final_NIST_u_SI": 3.8e-15,
+      "historical_mean_se_after_uniform_inflation_SI": 1.325107984964433e-15,
+      "final_NIST_vs_historical_z": -1.0694614557222175,
+      "training_count": 16,
+      "training_dof": 15,
+      "training_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  }
+}

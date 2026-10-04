@@ -1,0 +1,139 @@
+# data/codata_2018_g.yaml
+# CODATA-2018 G dataset (SI units) with published standard uncertainties and correlations (without CODATA-2018 expansion factor k=3.9).
+
+dataset: CODATA-2018 G
+unit_SI: m^3 kg^-1 s^-2
+# CODATA-2018 reported an expansion factor k=3.9; the source value is retained here as metadata.
+# Active reproducibility analyses use the stored k=1 standard uncertainties and estimate any
+# additional scale through the specified model.
+expansion_factor_k: 3.9   # u'_i = k * u_i applied to both diagonal and correlated off-diagonals
+notes: >
+  Order matches CODATA-2018 chronology and listing.
+  Covariance Sigma uses Sigma_ii = (k*u_i)^2 and Sigma_ij = r_ij * (k*u_i)*(k*u_j) for listed (i,j,r_ij).
+
+measurements:
+  # 0
+  - label: "NIST-82"
+    value_SI: 6.67248e-11
+    u_std_SI: 0.00043e-11
+    method: "fiber torsion balance, dynamic (time-of-swing)"
+    reference: "Luther and Towler (1982); Phys. Rev. Lett. 48, 121–123 (1982)"
+    year: 1982
+  # 1
+  - label: "TR&D-96"
+    value_SI: 6.6729e-11
+    u_std_SI: 0.0005e-11
+    method: "fiber torsion balance, dynamic"
+    reference: "Karagioz and Izmailov (1996); Measurement Techniques 39, 979–987 (1996)"
+    year: 1996
+  # 2
+  - label: "LANL-97"
+    value_SI: 6.67398e-11
+    u_std_SI: 0.00070e-11
+    method: "fiber torsion balance, dynamic"
+    reference: "Bagley and Luther (1997); Phys. Rev. Lett. 78, 3047–3050 (1997)"
+    year: 1997
+  # 3
+  - label: "UWash-00"
+    value_SI: 6.674255e-11
+    u_std_SI: 0.000092e-11
+    method: "fiber torsion balance, dynamic compensation"
+    reference: "Gundlach and Merkowitz (2000, 2002); Phys. Rev. Lett. 85, 2869–2872 (2000)"
+    year: 2000
+  # 4
+  - label: "BIPM-01"
+    value_SI: 6.67559e-11
+    u_std_SI: 0.00027e-11
+    method: "strip torsion balance, compensation/static deflection"
+    reference: "Quinn et al. (2001); Phys. Rev. Lett. 87, 111101 (2001)"
+    year: 2001
+  # 5
+  - label: "UWup-02"
+    value_SI: 6.67422e-11
+    u_std_SI: 0.00098e-11
+    method: "suspended body, displacement"
+    reference: "Kleinevoß (2002); Bestimmung der Newtonschen Gravitationskonstanten G, Ph.D. thesis, U. of Wuppertal (2002); Kleinevoß et al. (2002), private communication"
+    year: 2002
+  # 6
+  - label: "MSL-03"
+    value_SI: 6.67387e-11
+    u_std_SI: 0.00027e-11
+    method: "strip torsion balance, compensation"
+    reference: "Armstrong and Fitzgerald (2003); Phys. Rev. Lett. 91, 201101 (2003)"
+    year: 2003
+  # 7
+  - label: "HUST-05"
+    value_SI: 6.67222e-11
+    u_std_SI: 0.00087e-11
+    method: "fiber torsion balance, dynamic"
+    reference: "Hu, Guo, and Luo (2005); Phys. Rev. Lett. 95, 243001 (2005)"
+    year: 2005
+  # 8
+  - label: "UZur-06"
+    value_SI: 6.67425e-11
+    u_std_SI: 0.00012e-11
+    method: "stationary body, weight change"
+    reference: "Schlamminger et al. (2006); Phys. Rev. D 74, 082001 (2006)"
+    year: 2006
+  # 9
+  - label: "HUST-09"
+    value_SI: 6.67349e-11
+    u_std_SI: 0.00018e-11
+    method: "fiber torsion balance, dynamic"
+    reference: "Luo et al. (2009) and Tu et al. (2010); Phys. Rev. Lett. 102, 240801 (2009); Phys. Rev. D 82, 022001 (2010)"
+    year: 2009
+  # 10
+  - label: "BIPM-14"
+    value_SI: 6.67554e-11
+    u_std_SI: 0.00016e-11
+    method: "strip torsion balance, compensation mode and static deflection (two-mode weighted mean)"
+    reference: "Quinn et al. (2013, 2014); Phys. Rev. Lett. 111, 101102 (2013) with 2014 erratum; Phil. Trans. R. Soc. A 372, 20140032 (2014)"
+    year: 2014
+  # 11
+  - label: "LENS-14"
+    value_SI: 6.67191e-11
+    u_std_SI: 0.00099e-11
+    method: "double atom interferometer gravity gradiometer (cold-atom quantum interferometry)"
+    reference: "Rosi et al. (2014); Nature 510, 518–521 (2014)"
+    year: 2014
+  # 12
+  - label: "UCI-14"
+    value_SI: 6.67435e-11
+    u_std_SI: 0.00013e-11
+    method: "cryogenic torsion pendulum, dynamic (time-of-swing) mode with three fibres (CuBe as-drawn, CuBe heat-treated, Al5056)"
+    reference: "Newman et al. (2014); Phil. Trans. R. Soc. A 372, 20140025 (2014)"
+    year: 2014
+  # 13
+  - label: "HUSTT-18"
+    value_SI: 6.674184e-11
+    u_std_SI: 0.000078e-11
+    method: "torsion balance, time-of-swing method"
+    reference: "Li et al. (2018); Nature 560, 582–588 (2018)"
+    year: 2018
+  # 14
+  - label: "HUSTA-18"
+    value_SI: 6.674484e-11
+    u_std_SI: 0.000077e-11
+    method: "torsion balance, angular-acceleration feedback method"
+    reference: "Li et al. (2018); Nature 560, 582–588 (2018)"
+    year: 2018
+  # 15
+  - label: "JILA-18"
+    value_SI: 6.67260e-11
+    u_std_SI: 0.00025e-11
+    method: "suspended body, displacement (two simple pendulums with Fabry–Pérot interferometry)"
+    reference: "Parks and Faller (2010); Phys. Rev. Lett. 105, 110801 (2010); erratum Phys. Rev. Lett. 122, 199901 (2019)"
+    year: 2018
+
+# Listed correlation coefficients are the published CODATA-2018 correlations.
+# r(NIST-82, LANL-97)=0.351, r(HUST-05, HUST-09)=0.134, r(HUST-09, HUSTT-18)=0.068
+correlations:
+  - i: 0
+    j: 2
+    r: 0.351
+  - i: 7
+    j: 9
+    r: 0.134
+  - i: 9
+    j: 13
+    r: 0.068 #HUST-09 and HUSTT-18
