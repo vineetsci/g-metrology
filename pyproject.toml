@@ -9,6 +9,10 @@ readme = "README.md"
 description = "Reproducible computational package for a metrological study of covariance adequacy and prospective validation in G measurements"
 requires-python = ">=3.11"
 dependencies = ["numpy", "scipy", "pyyaml", "numba", "matplotlib"]
+license = {file = "LICENSE"}
+authors = [
+  {name = "Vineet Kumar", email = "337000970+vineetsci@users.noreply.github.com"},
+]
 
 [project.optional-dependencies]
 test = ["pytest>=8,<10"]
@@ -19,3 +23,12 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[project.urls]
+Repository = "https://github.com/vineetsci/g-metrology"
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
