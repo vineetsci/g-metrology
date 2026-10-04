@@ -1,6 +1,6 @@
 # G Metrology Reproducibility Package
 
-This repository contains the data, software, analyses, tests, and manuscript-output generators required to reproduce the computational results of the accompanying G-metrology study.
+This repository contains the data, software, analyses, tests, and manuscript-output generators required to reproduce the computational results of the accompanying the study _"Covariance scaling and a dual-mode torque diagnostic in measurements of the gravitational constant"_.
 
 ## Scientific scope
 
