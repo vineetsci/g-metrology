@@ -8,8 +8,8 @@
     "historical_input": "results/machine_readable/historical_dispersion.json",
     "prospective_input_sha256": "80819aa1eed62b90851aaa0f3d4c48aa95a09fcd23d344be38cf17c3e85dbed3",
     "historical_input_sha256": "d0d2eafb0fc162dfc02524e9e78525c594a81b7a3be56b8b2c0cade0979d3bac",
-    "repository_git_commit": null,
-    "creation_timestamp_utc": "2026-10-03T17:12:00.059514+00:00",
+    "repository_git_commit": "a24d453e0d75be2691a473e2dfedbd4497965d9e",
+    "creation_timestamp_utc": "2026-10-04T12:08:36.285666+00:00",
     "analysis_script_sha256": "f42903dbba9d68e7d4453c9c564922e9eebc1275f6a3106294b478cc2576fb51"
   },
   "model": {
