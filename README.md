@@ -1,6 +1,6 @@
 # G Metrology Reproducibility Package
 
-This repository contains the data, software, analyses, tests, and manuscript-output generators required to reproduce the computational results of the accompanying the study _"Covariance scaling and a dual-mode torque diagnostic in measurements of the gravitational constant"_.
+This repository contains the data, software, analyses, tests, and manuscript-output generators required to reproduce the computational results of the accompanying study _"Covariance scaling and a dual-mode torque diagnostic in measurements of the gravitational constant"_.
 
 ## Scientific scope
 
@@ -45,7 +45,7 @@ python reproduce.py --archive
 
 `--skip-nuts` skips the fresh NUTS sampling stage in `--archive`. `--skip-sbc` skips the SBC stage in `--full` or `--archive`. Both flags affect execution only and do not delete existing saved results. On legacy hardware, combine them with `--archive` to shorten runtime.
 
-Targeted commands remain available:
+Targeted commands are available for generating the paper figures/tables and a supplementary predictive band, respectively:
 
 ```bash
 python reproduce.py --paper
