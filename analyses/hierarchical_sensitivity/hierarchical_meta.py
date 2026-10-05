@@ -3,11 +3,9 @@ import json,sys
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
-import sys
 sys.path.insert(0, str(ROOT / "src"))
 import numpy as np
 from scipy.optimize import minimize
-from scipy.stats import norm, halfcauchy, lognorm
 from numba import njit
 ACTIVE_COVARIANCE_K = 1.0  # source uncertainties retain CODATA expansion; analysis intentionally resets to k=1
 from g_metrology.data import load_yaml,covariance_from_dataset

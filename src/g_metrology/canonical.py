@@ -1,6 +1,5 @@
 from __future__ import annotations
 import numpy as np
-from scipy.special import logsumexp
 from scipy.stats import multivariate_t
 
 
@@ -35,10 +34,3 @@ def conditional_mvt(y_train, mean_train, mean_hold, scale_train, scale_hold, sca
     df=float(nu+len(y_train))
     scale=((nu+q)/df)*schur
     return loc, scale, df
-
-
-def posterior_predictive_lppd(logpdf_draws) -> float:
-    x=np.asarray(logpdf_draws,float)
-    if x.size == 0 or not np.all(np.isfinite(x)):
-        raise ValueError('logpdf_draws must contain finite values')
-    return float(logsumexp(x)-np.log(x.size))

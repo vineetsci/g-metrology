@@ -3,7 +3,7 @@ import numpy as np
 from scipy.optimize import minimize
 import math
 from numba import njit
-from .inference import PosteriorDraws, rhat_table
+from .inference import PosteriorDraws
 
 @njit
 def _log_mvt(y, mu, cov, nu):

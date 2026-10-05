@@ -33,7 +33,7 @@ DRAW=10000; BURN=3000; CHAINS=4
 SEEDS={10.0:20264310,28.0:20264328,60.0:20264360}
 
 def posterior_scale(scale:float):
-    pri= P=Priors(nu_minus2_rate=1.0/scale)
+    pri=Priors(nu_minus2_rate=1.0/scale)
     return metropolis(y,Sd,pri,seed=SEEDS[scale],n_chains=CHAINS,n_draws=DRAW,burn=BURN), pri
 
 def summaries(p):

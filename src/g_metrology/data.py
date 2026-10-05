@@ -1,7 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable
 import hashlib
 import numpy as np
 import yaml
@@ -137,12 +136,3 @@ def covariance_diagnostics(S: np.ndarray, *, name: str = 'covariance', max_condi
     cond=maxeig/mineig
     if cond > max_condition: raise ValueError(f'{name}: covariance condition number {cond:.3e} exceeds limit {max_condition:.3e}')
     return {'min_eigenvalue':mineig,'max_eigenvalue':maxeig,'condition_number':float(cond)}
-
-
-def method_family(method: str) -> str:
-    s=(method or '').lower()
-    if 'atom interfer' in s or 'gravity gradiometer' in s: return 'atom_interferometry'
-    if 'torsion' in s or 'fiber' in s or 'strip' in s: return 'torsion_balance'
-    if 'suspended body' in s or 'suspended_body' in s or 'displacement' in s or 'pendulum' in s: return 'suspended_body'
-    if 'stationary body' in s or 'stationary_body' in s or 'weight change' in s: return 'stationary_body'
-    return 'other'

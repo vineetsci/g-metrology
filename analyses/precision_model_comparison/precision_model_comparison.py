@@ -7,7 +7,6 @@ import sys
 sys.path.insert(0, str(ROOT / "src"))
 import numpy as np
 from scipy.optimize import minimize
-from scipy.stats import norm, lognorm
 ACTIVE_COVARIANCE_K = 1.0  # Source metadata retain the CODATA expansion factor; the active fit uses k=1.
 from g_metrology.data import covariance_diagnostics
 from g_metrology.data import load_yaml,active_covariance_from_dataset

@@ -94,7 +94,7 @@ When SBC runs inside a mode, the simulation count is fixed by that mode: Full ru
 
 ## Maintenance
 
-`tools/hash_update.py` recomputes the SHA-256 hashes of the three authoritative
+`tools/update_hash.py` recomputes the SHA-256 hashes of the three authoritative
 input files (`data/codata_2010_g.yaml`, `data/codata_2018_g.yaml`,
 `data/nist2026_configurations.yaml`) and updates `data/MANIFEST.json` and
 `src/g_metrology/data.py` accordingly. Run it from the repository root after

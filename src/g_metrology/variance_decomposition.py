@@ -1,7 +1,7 @@
 from __future__ import annotations
 import numpy as np
 from scipy.optimize import minimize
-from scipy.stats import multivariate_normal, multivariate_t, t
+from scipy.stats import multivariate_normal, multivariate_t
 
 SCALE = 1e-14
 

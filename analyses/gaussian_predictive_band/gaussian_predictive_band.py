@@ -10,11 +10,9 @@ from __future__ import annotations
 import hashlib
 import json
 import subprocess
-import sys
 from math import sqrt
 from pathlib import Path
 
-from scipy import __version__ as scipy_version
 from scipy.stats import f
 
 ROOT = Path(__file__).resolve().parents[2]

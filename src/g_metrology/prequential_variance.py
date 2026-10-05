@@ -1,6 +1,4 @@
 from __future__ import annotations
-from pathlib import Path
-import json
 import numpy as np
 from scipy.stats import multivariate_normal
 from scipy.optimize import minimize
@@ -57,7 +55,7 @@ def run_prequential_variance(data_path, *, start_train=7, codata=6.67430e-11):
     models = [('free_lambda',None,'lambda'),('free_dark',None,'dark'),('free_both',None,'both')]
     for k in range(start_train, len(y)):
         tr = np.arange(k); ho = np.array([k]); row = {'train_end_year':int(years[k-1]),'holdout_year':int(years[k]),'holdout_label':labels[k]}
-        for name, fixed, kind in models:
+        for name, _, kind in models:
             mu,lam,delta,ll = _fit_mode(y[tr], C[np.ix_(tr,tr)], fixed_mu=None, kind=kind)
             row[name] = _conditional_normal_score(y,C,tr,ho,mu,lam,delta)
             row[name+'_lambda'] = lam; row[name+'_delta'] = delta

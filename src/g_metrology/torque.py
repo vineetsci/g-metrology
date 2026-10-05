@@ -64,12 +64,3 @@ def fractional_torque_fit(
     dof = len(delta) - 1
     p_value = float(chi2.sf(chi2_value, dof))
     return f_hat, se_f, chi2_value, p_value
-
-
-def table15_reordered(order):
-    index = {name: i for i, name in enumerate(TABLE15_CONFIG_ORDER)}
-    idx = [index[name] for name in order]
-    return TABLE15_DELTA_PNM[idx].copy(), TABLE15_TYPEA_PNM[idx].copy()
-
-
-TABLE15_SAPPHIRE_FIRST_ORDER = ("sapphire", "Cu0", "Cu120", "Cu240")

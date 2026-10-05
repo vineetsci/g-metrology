@@ -2,7 +2,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 import numpy as np
 from scipy.optimize import minimize
-from scipy.stats import chi2
 
 @dataclass(frozen=True)
 class CovarianceStructureFit:

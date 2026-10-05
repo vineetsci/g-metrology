@@ -6,13 +6,6 @@ from .canonical import total_scale, mvt_logpdf
 from .config import Priors, DEFAULT_PRIORS
 DEFAULT_PYMC_PRIORS = DEFAULT_PRIORS
 
-@dataclass(frozen=True)
-class Params:
-    mu: float
-    tau: float
-    lam: float
-    nu: float
-
 def log_prior(mu,tau,lam,nu,priors: Priors, fixed_mu=None):
     lp=0.0
     if fixed_mu is None: lp += norm.logpdf(mu,0,priors.mu_sd)
