@@ -69,7 +69,7 @@ The primary predictive band is the Gaussian proportional common-scale model. The
 
 ## Traceability
 
-`CLAIMS.md` links each manuscript result to its input data, analysis script, numerical result, and manuscript output. `docs/paper_reproduction.md` gives the paper-level map.
+`CLAIMS.md` links each manuscript result to its input data, analysis script, numerical result, and manuscript output. `docs/paper_reproduction.md` describes the paper-reproduction workflow, execution modes, and generated outputs.
 
 ## Data
 
