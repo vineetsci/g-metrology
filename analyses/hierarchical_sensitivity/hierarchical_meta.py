@@ -47,7 +47,7 @@ def posterior_bias_sample(theta,y,S):
   mu=z[0]; tau=np.exp(z[1]); lam=np.exp(z[2]); R=lam*lam*S; Ri=np.linalg.inv(R); V=np.linalg.inv(Ri+np.eye(len(y))/(tau*tau)); m=V@(Ri@(y-mu)); out.append(m); sd.append(np.sqrt(np.diag(V)))
  return np.asarray(out),np.asarray(sd)
 D=load_yaml(DATA); ctx=StandardizationContext.from_data(D.y); y=ctx.transform(D.y); S=ctx.covariance_to_std(covariance_from_dataset(D,ACTIVE_COVARIANCE_K))
-chains=mh(y,S); raw=chains.reshape(-1,3); tau=np.exp(raw[:,1]); lam=np.exp(raw[:,2]); mu=raw[:,0]
+chains=mh(y,S,n_draws=16000,burn=8000); raw=chains.reshape(-1,3); tau=np.exp(raw[:,1]); lam=np.exp(raw[:,2]); mu=raw[:,0]
 rng=np.random.default_rng(3); sub=raw[rng.choice(len(raw),size=min(2500,len(raw)),replace=False)]; bm,bs=posterior_bias_sample(sub,y,S)
 def rh(ch):
  out={}

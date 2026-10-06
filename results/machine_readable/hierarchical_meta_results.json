@@ -2,16 +2,16 @@
   "model": "Bayesian hierarchical Gaussian random-effects sensitivity analysis",
   "equation": "y_i = mu + b_i + e_i; b_i~N(0,tau^2); e~N(0,lambda^2 S_reported)",
   "n": 16,
-  "posterior_draws": 16000,
+  "posterior_draws": 64000,
   "rhat": {
-    "mu": 1.0025635305552247,
-    "log_tau": 1.0177695365799335,
-    "log_lambda": 1.0046509853601104
+    "mu": 1.00185709975373,
+    "log_tau": 1.0013274170204551,
+    "log_lambda": 1.0018801736359308
   },
   "convergence_flags": {
     "rhat_le_1.01": {
       "mu": true,
-      "log_tau": false,
+      "log_tau": true,
       "log_lambda": true
     },
     "rhat_le_1.05": {
@@ -19,184 +19,184 @@
       "log_tau": true,
       "log_lambda": true
     },
-    "any_above_1.01": true,
+    "any_above_1.01": false,
     "note": "R-hat above 1.01 indicates a mild convergence warning for that parameter; above 1.05 is a stronger warning."
   },
-  "mu_si_median": 6.6741687030466e-11,
+  "mu_si_median": 6.674194023570724e-11,
   "mu_si_ci95": [
-    6.673564393290835e-11,
-    6.674618101384956e-11
+    6.67350368268261e-11,
+    6.674604614654879e-11
   ],
-  "tau_si_median": 5.305307972768963e-15,
+  "tau_si_median": 4.9437246175137035e-15,
   "tau_si_ci95": [
-    2.2287369140926987e-16,
-    1.3099539012348385e-14
+    1.9793171953354963e-16,
+    1.3438568327384097e-14
   ],
-  "lambda_median": 2.8136206371227694,
+  "lambda_median": 2.8594724238777793,
   "lambda_ci95": [
-    0.6265320220700433,
-    5.045767007620153
+    0.5043553185703693,
+    5.050353127064336
   ],
   "shrinkage": {
     "NIST-82": {
-      "observed_minus_mu_si": -1.6887030466002057e-14,
-      "posterior_bias_median_si": -2.5913219029905478e-15,
+      "observed_minus_mu_si": -1.714023570724213e-14,
+      "posterior_bias_median_si": -2.755688675583027e-15,
       "posterior_bias_ci95_si": [
-        -1.3713833186056432e-14,
-        -2.8876012775766314e-18
+        -1.478664524870912e-14,
+        -4.200235604992878e-18
       ],
-      "shrinkage_fraction": 0.15345041913719207,
-      "bias_over_posterior_sd": -0.6808307966203829
+      "shrinkage_fraction": 0.16077309102690387,
+      "bias_over_posterior_sd": -0.7258154664338501
     },
     "TR&D-96": {
-      "observed_minus_mu_si": -1.2687030465994461e-14,
-      "posterior_bias_median_si": -1.3804475068977925e-15,
+      "observed_minus_mu_si": -1.2940235707234534e-14,
+      "posterior_bias_median_si": -1.4247962078590852e-15,
       "posterior_bias_ci95_si": [
-        -9.677888320745849e-15,
-        -1.4591198310920341e-18
+        -1.0644018603249742e-14,
+        -2.134401914656965e-18
       ],
-      "shrinkage_fraction": 0.1088077711011934,
-      "bias_over_posterior_sd": -0.34791684952079693
+      "shrinkage_fraction": 0.1101058929755445,
+      "bias_over_posterior_sd": -0.3555185500512986
     },
     "LANL-97": {
-      "observed_minus_mu_si": -1.8870304660026258e-15,
-      "posterior_bias_median_si": 2.96050689620737e-16,
+      "observed_minus_mu_si": -2.1402357072426986e-15,
+      "posterior_bias_median_si": 2.6372975580167116e-16,
       "posterior_bias_ci95_si": [
-        -6.6716383425495e-17,
-        3.175115672946029e-15
+        -5.459911245839539e-16,
+        3.5752204177360154e-15
       ],
-      "shrinkage_fraction": 0.15688707466810176,
-      "bias_over_posterior_sd": 0.06727740159985576
+      "shrinkage_fraction": 0.12322463124467653,
+      "bias_over_posterior_sd": 0.06043435873498681
     },
     "UWash-00": {
-      "observed_minus_mu_si": 8.629695340080405e-16,
-      "posterior_bias_median_si": 3.0735792592998034e-16,
+      "observed_minus_mu_si": 6.097642927679677e-16,
+      "posterior_bias_median_si": 1.9649883030814837e-16,
       "posterior_bias_ci95_si": [
-        -2.1936741863545046e-15,
-        6.885843490055313e-15
+        -2.6068916590984682e-15,
+        7.103927423484476e-15
       ],
-      "shrinkage_fraction": 0.3561631249048431,
-      "bias_over_posterior_sd": 0.18697314874942828
+      "shrinkage_fraction": 0.3222537505700114,
+      "bias_over_posterior_sd": 0.11881070245500076
     },
     "BIPM-01": {
-      "observed_minus_mu_si": 1.4212969533998487e-14,
-      "posterior_bias_median_si": 3.977764354292843e-15,
+      "observed_minus_mu_si": 1.3959764292758414e-14,
+      "posterior_bias_median_si": 4.0778055068360484e-15,
       "posterior_bias_ci95_si": [
-        3.5412615659093865e-18,
-        1.841775147325388e-14
+        5.968028811604837e-18,
+        1.935280093073767e-14
       ],
-      "shrinkage_fraction": 0.279868632995922,
-      "bias_over_posterior_sd": 1.2530971164995186
+      "shrinkage_fraction": 0.29211134381053966,
+      "bias_over_posterior_sd": 1.293837208955095
     },
     "UWup-02": {
-      "observed_minus_mu_si": 5.129695339998682e-16,
-      "posterior_bias_median_si": 2.1025074504271587e-18,
+      "observed_minus_mu_si": 2.597642927597953e-16,
+      "posterior_bias_median_si": 8.666057974383898e-19,
       "posterior_bias_ci95_si": [
-        -3.0160950055214907e-16,
-        3.582281616590492e-15
+        -4.3688273205916763e-16,
+        4.3005167515011066e-15
       ],
-      "shrinkage_fraction": 0.004098698482213751,
-      "bias_over_posterior_sd": 0.000432955710512477
+      "shrinkage_fraction": 0.003336123638208193,
+      "bias_over_posterior_sd": 0.0001850259992353147
     },
     "MSL-03": {
-      "observed_minus_mu_si": -2.9870304659913827e-15,
-      "posterior_bias_median_si": -2.619471456576323e-16,
+      "observed_minus_mu_si": -3.2402357072314555e-15,
+      "posterior_bias_median_si": -3.111804838888158e-16,
       "posterior_bias_ci95_si": [
-        -3.840473146464011e-15,
-        2.800657222160622e-15
+        -4.393828906715707e-15,
+        2.9855443792045004e-15
       ],
-      "shrinkage_fraction": 0.0876948356034571,
-      "bias_over_posterior_sd": -0.0825200247331426
+      "shrinkage_fraction": 0.09603637266089406,
+      "bias_over_posterior_sd": -0.09873371549502614
     },
     "HUST-05": {
-      "observed_minus_mu_si": -1.9487030466003682e-14,
-      "posterior_bias_median_si": -6.674488547972058e-16,
+      "observed_minus_mu_si": -1.9740235707243755e-14,
+      "posterior_bias_median_si": -7.185734754215435e-16,
       "posterior_bias_ci95_si": [
-        -1.2421596451198695e-14,
-        -5.73951733194253e-19
+        -1.4149104964180122e-14,
+        -8.037165125163883e-19
       ],
-      "shrinkage_fraction": 0.034250926838833205,
-      "bias_over_posterior_sd": -0.14143022827625532
+      "shrinkage_fraction": 0.03640146379599005,
+      "bias_over_posterior_sd": -0.15649161224203015
     },
     "UZur-06": {
-      "observed_minus_mu_si": 8.129695340050267e-16,
-      "posterior_bias_median_si": 2.233883646959068e-16,
+      "observed_minus_mu_si": 5.597642927649538e-16,
+      "posterior_bias_median_si": 1.2708993316854396e-16,
       "posterior_bias_ci95_si": [
-        -2.003104341980692e-15,
-        6.821979321720431e-15
+        -2.4164490509436522e-15,
+        6.943446826500507e-15
       ],
-      "shrinkage_fraction": 0.2747807332894781,
-      "bias_over_posterior_sd": 0.11398377814537948
+      "shrinkage_fraction": 0.22704187246525398,
+      "bias_over_posterior_sd": 0.06369269927300285
     },
     "HUST-09": {
-      "observed_minus_mu_si": -6.787030466000717e-15,
-      "posterior_bias_median_si": -2.0818533157447757e-15,
+      "observed_minus_mu_si": -7.0402357072407896e-15,
+      "posterior_bias_median_si": -2.145377300235569e-15,
       "posterior_bias_ci95_si": [
-        -7.394336200890981e-15,
-        -1.8862425915147183e-19
+        -8.021240811973248e-15,
+        -3.48400093213428e-19
       ],
-      "shrinkage_fraction": 0.30673993967961594,
-      "bias_over_posterior_sd": -0.8175125327229015
+      "shrinkage_fraction": 0.3047308910451786,
+      "bias_over_posterior_sd": -0.8397942629517451
     },
     "BIPM-14": {
-      "observed_minus_mu_si": 1.3712969534007122e-14,
-      "posterior_bias_median_si": 6.963224803358447e-15,
+      "observed_minus_mu_si": 1.345976429276705e-14,
+      "posterior_bias_median_si": 7.0019711670417845e-15,
       "posterior_bias_ci95_si": [
-        9.700110231598887e-18,
-        1.8865728867659147e-14
+        1.633455800095696e-17,
+        1.949024290866742e-14
       ],
-      "shrinkage_fraction": 0.5077838746808397,
-      "bias_over_posterior_sd": 2.9471273897447903
+      "shrinkage_fraction": 0.5202149914916766,
+      "bias_over_posterior_sd": 2.9469442371352383
     },
     "LENS-14": {
-      "observed_minus_mu_si": -2.258703046599667e-14,
-      "posterior_bias_median_si": -6.820230483302648e-16,
+      "observed_minus_mu_si": -2.2840235707236744e-14,
+      "posterior_bias_median_si": -7.274738426964938e-16,
       "posterior_bias_ci95_si": [
-        -1.361599508569917e-14,
-        -6.552873379564459e-19
+        -1.605384921627216e-14,
+        -9.451863002883383e-19
       ],
-      "shrinkage_fraction": 0.030195339283621496,
-      "bias_over_posterior_sd": -0.1398440750578799
+      "shrinkage_fraction": 0.03185054007415517,
+      "bias_over_posterior_sd": -0.1551581413520235
     },
     "UCI-14": {
-      "observed_minus_mu_si": 1.8129695340006805e-15,
-      "posterior_bias_median_si": 6.45035437693273e-16,
+      "observed_minus_mu_si": 1.5597642927606076e-15,
+      "posterior_bias_median_si": 5.582674929434587e-16,
       "posterior_bias_ci95_si": [
-        -1.1859890315996549e-15,
-        7.753843065027517e-15
+        -1.5942400577554352e-15,
+        7.891509673095035e-15
       ],
-      "shrinkage_fraction": 0.3557894523852657,
-      "bias_over_posterior_sd": 0.30965592759786276
+      "shrinkage_fraction": 0.3579178569060506,
+      "bias_over_posterior_sd": 0.2661850855037914
     },
     "HUSTT-18": {
-      "observed_minus_mu_si": 1.5296953399884783e-16,
-      "posterior_bias_median_si": 8.178228655325233e-17,
+      "observed_minus_mu_si": -1.0023570724122504e-16,
+      "posterior_bias_median_si": 1.3025723954707408e-17,
       "posterior_bias_ci95_si": [
-        -2.8129882902215736e-15,
-        6.183232481298804e-15
+        -3.2641985984396528e-15,
+        6.453706082100504e-15
       ],
-      "shrinkage_fraction": 0.534631206720338,
-      "bias_over_posterior_sd": 0.056355743811066256
+      "shrinkage_fraction": 0.12995093578139633,
+      "bias_over_posterior_sd": 0.008809453422274793
     },
     "HUSTA-18": {
-      "observed_minus_mu_si": 3.152969533998734e-15,
-      "posterior_bias_median_si": 1.9444984277846212e-15,
+      "observed_minus_mu_si": 2.8997642927586612e-15,
+      "posterior_bias_median_si": 1.7789685304547823e-15,
       "posterior_bias_ci95_si": [
-        -7.108412344931997e-16,
-        9.17718645193791e-15
+        -6.456453711647196e-16,
+        9.394501112940782e-15
       ],
-      "shrinkage_fraction": 0.616719700846117,
-      "bias_over_posterior_sd": 1.3538642918050119
+      "shrinkage_fraction": 0.613487287534801,
+      "bias_over_posterior_sd": 1.2139390855238097
     },
     "JILA-18": {
-      "observed_minus_mu_si": -1.5687030465994348e-14,
-      "posterior_bias_median_si": -5.122437570714711e-15,
+      "observed_minus_mu_si": -1.594023570723442e-14,
+      "posterior_bias_median_si": -5.3045396403502314e-15,
       "posterior_bias_ci95_si": [
-        -1.4556162999043522e-14,
-        -7.09880235532129e-18
+        -1.5328319543580424e-14,
+        -1.0749207745011515e-17
       ],
-      "shrinkage_fraction": 0.3265396584662027,
-      "bias_over_posterior_sd": -1.6898295564258237
+      "shrinkage_fraction": 0.33277673792130846,
+      "bias_over_posterior_sd": -1.739212204724694
     }
   },
   "prior_sensitivity_tau_beta": {
