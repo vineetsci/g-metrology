@@ -17,11 +17,13 @@ preferred-citation:
   authors:
     - given-names: Vineet
       family-names: Kumar
+  url: "https://arxiv.org/abs/2610.04707"
+  doi: "https://doi.org/10.48550/arXiv.2610.04707"
 
 license: MIT
 
 repository-code: "https://github.com/vineetsci/g-metrology"
-url: "https://github.com/vineetsci/g-metrology"
+url: "https://arxiv.org/abs/2610.04707"
 
 keywords:
   - gravitational constant

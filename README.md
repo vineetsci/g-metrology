@@ -1,6 +1,6 @@
 # G Metrology Reproducibility Package
 
-This repository contains the data, software, analyses, tests, and manuscript-output generators required to reproduce the computational results of the accompanying study _"Covariance scaling and a dual-mode torque diagnostic in measurements of the gravitational constant"_.
+This repository contains the data, software, analyses, tests, and manuscript-output generators required to reproduce the computational results of the accompanying study _"Covariance scaling and a dual-mode torque diagnostic in measurements of the gravitational constant"_ ([arXiv:2610.04707](https://arxiv.org/abs/2610.04707); [doi:10.48550/arXiv.2610.04707](https://doi.org/10.48550/arXiv.2610.04707)).
 
 ## Scientific scope
 
