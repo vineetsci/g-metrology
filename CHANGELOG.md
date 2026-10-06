@@ -23,7 +23,7 @@
 - Added `tools/update_hash.py`, a maintainer utility that recomputes the SHA-256 hashes of the three authoritative input YAML files and updates `data/MANIFEST.json` and `src/g_metrology/data.py` after an explicit confirmation prompt.
 - Removed useless, absolutely dead code flagged by Ruff and Vulture but leaving some that may be useful for later work.
 - Strengthened the hierarchical sensitivity MCMC sampling in `analyses/hierarchical_meta.py` to 16,000 post-burn draws with 8,000 burn-in draws.
-- Added arxiv URL and doi for the accompanying study.
+- Updated the `CITATION.cff` file to reflect year, arxiv URL, doi etc for the accompanying study.
 
 ## 0.9.5-rc6
 
