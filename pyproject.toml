@@ -13,6 +13,11 @@ license = {file = "LICENSE"}
 authors = [
   {name = "Vineet Kumar", email = "337000970+vineetsci@users.noreply.github.com"},
 ]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
 
 [project.optional-dependencies]
 test = ["pytest>=8,<10"]
@@ -26,9 +31,3 @@ testpaths = ["tests"]
 
 [project.urls]
 Repository = "https://github.com/vineetsci/g-metrology"
-
-classifiers = [
-  "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: MIT License",
-  "Operating System :: OS Independent",
-]

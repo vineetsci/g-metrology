@@ -1,6 +1,7 @@
 # G Metrology Reproducibility Package
 
-This repository contains the data, software, analyses, tests, and manuscript-output generators required to reproduce the computational results of the accompanying study _"Covariance scaling and a dual-mode torque diagnostic in measurements of the gravitational constant"_ ([arXiv:2610.04707](https://arxiv.org/abs/2610.04707); [doi:10.48550/arXiv.2610.04707](https://doi.org/10.48550/arXiv.2610.04707)).
+This repository contains the data, software, analyses, tests, and manuscript-output generators required to reproduce the computational results of the accompanying study _"Covariance scaling and a dual-mode torque diagnostic in measurements of the gravitational constant"_.  
+<kbd>arXiv</kbd>[`2610.04707`](https://arxiv.org/abs/2610.04707) [![DOI:10.48550/arXiv.2610.04707](https://zenodo.org/badge/DOI/10.48550/arXiv.2610.04707.svg)](https://doi.org/10.48550/arXiv.2610.04707) 
 
 ## Scientific scope
 
@@ -10,19 +11,29 @@ The study does not claim a new value of G or identify a universal physical mecha
 
 ## Install
 
-Create a clean Python environment and install the package with its test dependencies:
+Create a clean python environment and choose between the two installation methods.
+
+### Option A — Standard installation
+
+Install G-metrology and its test dependencies. Pip selects compatible dependency versions.
 
 ```bash
 python -m pip install ".[test]"
 ```
 
-For the pinned core/test environment:
+### Option B — Pinned core/test environment
+
+Use the dependency versions recorded in requirements-core.lock, then install without changing those dependencies.
 
 ```bash
 python -m pip install -r requirements-core.lock
 python -m pip install . --no-deps
 ```
+A pinned environment reduces variation caused by dependency upgrades. The lock file pins the packages it lists; it does not by itself guarantee identical results across every operating system, Python version, or hardware configuration.
 
+Choose one method, not both. Option A is simpler for ordinary installation. Option B is intended for reproducing the documented core/test environment with specified dependency versions.
+
+### Additional dependencies for NUTS and SBC
 For NUTS and full SBC stages:
 
 ```bash

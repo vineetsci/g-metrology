@@ -24,6 +24,7 @@
 - Removed useless, absolutely dead code flagged by Ruff and Vulture but leaving some that may be useful for later work.
 - Strengthened the hierarchical sensitivity MCMC sampling in `analyses/hierarchical_meta/hierarchical_meta.py` to 16,000 post-burn draws with 8,000 burn-in draws.
 - Updated the `CITATION.cff` file to reflect year, arxiv URL, doi etc for the accompanying study.
+- Moved classifiers in `pyproject.toml` to `[projects]` as it caused installation errors.
 
 ## 0.9.5-rc6
 
